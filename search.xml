@@ -22,16 +22,16 @@
   
     
     <entry>
+      <title><![CDATA[about]]></title>
+      <url>http://guozhivip.github.io/about/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[404]]></title>
       <url>http://guozhivip.github.io/404/index.html</url>
       <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
 <h2 id="permalink-404"><a href="#permalink-404" class="headerlink" title="permalink: /404"></a>permalink: /404</h2>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[about]]></title>
-      <url>http://guozhivip.github.io/about/index.html</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
