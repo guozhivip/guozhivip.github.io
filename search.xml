@@ -29,19 +29,19 @@
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>http://guozhivip.github.io/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title></title>
       <url>http://guozhivip.github.io/about/index.html</url>
       <content type="html"><![CDATA[<hr>
 <p>title: About me<br>date: 2016-12-27 10:25:36</p>
-<h2 id="tags-about-me"><a href="#tags-about-me" class="headerlink" title="tags:[about me]"></a>tags:[about me]</h2><a id="more"></a>
+<h2 id="tags-about-me"><a href="#tags-about-me" class="headerlink" title="tags: [about me]"></a>tags: [about me]</h2><a id="more"></a>
 <p><img src="https://guozhivip.github.io/img/avatar.png" alt="果汁教育创始人"></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>http://guozhivip.github.io/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
