@@ -22,6 +22,12 @@
   
     
     <entry>
+      <title><![CDATA[tags]]></title>
+      <url>http://guozhivip.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[404]]></title>
       <url>http://guozhivip.github.io/404/index.html</url>
       <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
@@ -44,12 +50,6 @@
 <li><a href="http://guozhivip.com/myblog/myblog.html" target="_blank" rel="external">果汁教育创始人</a></li>
 </ul>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[tags]]></title>
-      <url>http://guozhivip.github.io/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
