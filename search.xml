@@ -22,12 +22,6 @@
   
     
     <entry>
-      <title><![CDATA[about]]></title>
-      <url>http://guozhivip.github.io/about/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[404]]></title>
       <url>http://guozhivip.github.io/404/index.html</url>
       <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
@@ -38,6 +32,16 @@
       <title><![CDATA[tags]]></title>
       <url>http://guozhivip.github.io/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>http://guozhivip.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<hr>
+<p>title: About me</p>
+<h2 id="date-2016-12-27-10-25-36"><a href="#date-2016-12-27-10-25-36" class="headerlink" title="date: 2016-12-27 10:25:36"></a>date: 2016-12-27 10:25:36</h2><a id="more"></a>
+<p><img src="https://github.com/guozhivip/guozhivip.github.io/blob/master/img/avatar.png" alt="果汁教育创始人"></p>
+]]></content>
     </entry>
     
   
