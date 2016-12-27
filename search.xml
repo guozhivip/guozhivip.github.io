@@ -7,7 +7,7 @@
       <title><![CDATA[Hello World]]></title>
       <url>http://guozhivip.github.io/2016/12/26/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
@@ -32,9 +32,21 @@
       <title></title>
       <url>http://guozhivip.github.io/about/index.html</url>
       <content type="html"><![CDATA[<hr>
-<p>title: About me<br>date: 2016-12-27 10:25:36</p>
-<h2 id="tags-about-me"><a href="#tags-about-me" class="headerlink" title="tags: [about me]"></a>tags: [about me]</h2><a id="more"></a>
+<h2 id="title-About-me"><a href="#title-About-me" class="headerlink" title="title: About me "></a>title: About me </h2><a id="more"></a>
 <p><img src="https://guozhivip.github.io/img/avatar.png" alt="果汁教育创始人"></p>
+<blockquote>
+<p>郭力，毕业于西安科技大学，2016年1月12日创办果汁教育在线学习网站，不走寻<br>常路的前端开发工程师，新媒体运营新秀，所独立运营的自媒体公众号“果汁英语”<br>目前已成功入驻腾讯新闻，网易新闻，搜狐新闻，今日头条等主流媒体平台且用户<br>数量逐日上升。同时也是一枚资深旅行摄影爱好者，一本不正经的伪文艺青年。</p>
+</blockquote>
+<ul>
+<li><p><a href="http://guozhivip.com/" target="_blank" rel="external">果汁英语官网</a></p>
+</li>
+<li><p><a href="http://guozhivip.com/guozhi_recom/guozhi_recom.html" target="_blank" rel="external">果汁资源导航</a></p>
+</li>
+<li><p><a href="http://guozhivip.com/sight/Sight.html" target="_blank" rel="external">果汁旅行摄影</a></p>
+</li>
+<li><p><a href="http://guozhivip.com/myblog/myblog.html" target="_blank" rel="external">果汁教育创始人</a></p>
+</li>
+</ul>
 ]]></content>
     </entry>
     
