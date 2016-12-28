@@ -4,8 +4,711 @@
   
     
     <entry>
+      <title><![CDATA[关于 Yelee 主题背景图的压缩与优化]]></title>
+      <url>http://guozhivip.github.io/2016/05/17/image-compression/</url>
+      <content type="html"><![CDATA[<p>　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。</p>
+<a id="more"></a>
+<h2 id="优化说明"><a href="#优化说明" class="headerlink" title="优化说明"></a>优化说明</h2><ul>
+<li>请使用 <code>jpg</code> 后缀名的背景图片；</li>
+<li>如果可以，使用 <code>渐进式JPEG</code>，让图片加载时逐渐清晰；</li>
+<li>将图片品质尽量调低，一般可以压缩到几十kb（背景图半透明显示，因此细节并不重要）；<blockquote>
+<p>下图1 为目前主题自带背景图的分辨率和文件大小展示，图2 为渐进式图片加载示例</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/resources/image-compression-1.png" alt="Yelee Background info."> <img src="/resources/image-compression-2.gif" alt="Progressive JPEGs"></p>
+<h2 id="优化方案"><a href="#优化方案" class="headerlink" title="优化方案"></a>优化方案</h2><h3 id="PhotoShop"><a href="#PhotoShop" class="headerlink" title="PhotoShop"></a>PhotoShop</h3><ul>
+<li>电脑上如果装有 PhotoShop, 那用其来优化图片真是再好不过了</li>
+<li>PS 打开图片 → 文件 → 存储为 Web 所用格式 → JPEG 格式，品质 0，勾选 <code>连续</code> （渐进式），最后存储，这样一张高压缩渐进式的 JPG 背景图就做好了</li>
+</ul>
+<p><img src="/resources/image-compression-ps.png" alt="image Compression by PhotoShop"></p>
+<h3 id="智图"><a href="#智图" class="headerlink" title="智图"></a>智图</h3><ul>
+<li><a href="http://zhitu.isux.us/" target="_blank" rel="external">智图</a> 是腾讯 ISUX 出品的在线图片优化工具，可以方便的对比优化前后的图片，同时可以自行调节图片品质，除了不能设置 <code>渐进式JPEG</code> , 其他基本满足背景图优化需要</li>
+<li>进入网站后按提示上传图片，再调低图片品质，之后下载图片即可<blockquote>
+<p>因为主题背景图为 <code>jpg</code> 格式，其他格式请转为 <code>jpg</code> 再上传到该网站优化。转换格式方法很多，比如用 Windows 自带的画图打开图片然后另存为 jpg</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/resources/zhitu.png" alt="智图"></p>
+<h3 id="方案对比"><a href="#方案对比" class="headerlink" title="方案对比"></a>方案对比</h3><ul>
+<li>原图为 420kb，智图选择最低品质(10)后约为 129kb；</li>
+<li>PhotoShop 选择品质 0，可以压缩到 62k，同时可以设为 <code>渐进式JPEG</code>；</li>
+<li>因此，有条件的话更推荐使用 PS 压缩背景图。</li>
+</ul>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>智图</strong>: <a href="http://zhitu.isux.us/" target="_blank" rel="external">http://zhitu.isux.us/</a></li>
+<li><strong>TinyPNG</strong>: <a href="https://tinypng.com/" target="_blank" rel="external">https://tinypng.com/</a></li>
+<li><strong><em>渐进式 jpeg(progressive jpeg) 图片及其相关</em></strong> by <strong>张鑫旭</strong> on <code>2013/01/07</code>: <a href="http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/</a></li>
+<li><strong>呆毛王示例壁纸下载</strong>: <a href="http://moxfive.xyz/resources/saber.jpg" target="_blank" rel="external">http://moxfive.xyz/resources/saber.jpg</a></li>
+<li><strong>最人性化的壁纸网站</strong>: <a href="http://www.wallpaperpcmobile.com/" target="_blank" rel="external">http://www.wallpaperpcmobile.com/</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[几个国内专用的公共 DNS]]></title>
+      <url>http://guozhivip.github.io/2016/05/11/public-dns/</url>
+      <content type="html"><![CDATA[<p>　　之前 <a href="http://www.bootcdn.cn/" target="_blank" rel="external">有个网站</a> 自己经常上不去，查了挺久才发现是 DNS 的问题，更换为公共 DNS 后访问恢复正常。由此可见，挑选一个合适自己网络的 DNS 还是挺有必要的。</p>
+<a id="more"></a>
+<h2 id="DNS-简介"><a href="#DNS-简介" class="headerlink" title="DNS 简介"></a>DNS 简介</h2><p>DNS 全称 <code>Domain Name System</code>，中文译为 <code>域名系统</code>，是因特网的一项服务，其域名服务器的分布式数据库中存储着因特网上域名和 IP 地址相互映射的关系，经解析器解析，使用户能够通过域名来访问互联网。</p>
+<h2 id="114DNS"><a href="#114DNS" class="headerlink" title="114DNS"></a>114DNS</h2><pre><code>114.114.114.114
+114.114.115.115
+</code></pre><p><strong>官　网</strong>：<a href="http://www.114dns.com/" target="_blank" rel="external">http://www.114dns.com/</a><br><strong>关键词</strong>：权威，高速，稳定，可靠，无劫持，防钓鱼，防病毒</p>
+<h2 id="阿里公共DNS"><a href="#阿里公共DNS" class="headerlink" title="阿里公共DNS"></a>阿里公共DNS</h2><pre><code>223.5.5.5
+223.6.6.6
+</code></pre><p><strong>官　网</strong>：<a href="http://www.alidns.com/" target="_blank" rel="external">http://www.alidns.com/</a><br><strong>关键词</strong>：快速，稳定，智能</p>
+<h2 id="腾讯-Public-DNS"><a href="#腾讯-Public-DNS" class="headerlink" title="腾讯 Public DNS +"></a>腾讯 Public DNS +</h2><pre><code>119.29.29.29
+</code></pre><p><strong>官　网</strong>：<a href="https://www.dnspod.cn/Products/Public.DNS" target="_blank" rel="external">https://www.dnspod.cn/Products/Public.DNS</a><br><strong>关键词</strong>：快速，准确，稳定</p>
+<h2 id="百度公共DNS"><a href="#百度公共DNS" class="headerlink" title="百度公共DNS"></a>百度公共DNS</h2><pre><code>180.76.76.76
+</code></pre><p><strong>官　网</strong>：<a href="http://dudns.baidu.com/intro/publicdns/" target="_blank" rel="external">http://dudns.baidu.com/intro/publicdns/</a><br><strong>关键词</strong>：云防护，无劫持，更精确</p>
+<h2 id="oneDNS"><a href="#oneDNS" class="headerlink" title="oneDNS"></a>oneDNS</h2><pre><code>南方首选：112.124.47.27
+北方首选：114.215.126.16
+</code></pre><p><strong>官　网</strong>：<a href="http://www.onedns.net/" target="_blank" rel="external">http://www.onedns.net/</a><br><strong>关键词</strong>：安全，快速，恶意网站拦截，广告过滤，上网加速</p>
+<h2 id="CNNIC-SDNS"><a href="#CNNIC-SDNS" class="headerlink" title="CNNIC SDNS"></a>CNNIC SDNS</h2><pre><code>1.2.4.8
+210.2.4.8
+</code></pre><p><strong>官　网：</strong><a href="http://public.sdns.cn/" target="_blank" rel="external">http://public.sdns.cn/</a><br><strong>关键词：</strong>权威，安全，智能，高速</p>
+<h2 id="DNS-选用"><a href="#DNS-选用" class="headerlink" title="DNS 选用"></a>DNS 选用</h2><h3 id="在线查询"><a href="#在线查询" class="headerlink" title="在线查询"></a>在线查询</h3><ul>
+<li>可以通过 <a href="http://www.webkaka.com/dns/" target="_blank" rel="external">在线小工具</a> 测试一下 DNS 的解析速度，结果可以作为参考<br><img src="/resources/dns-tool.png" alt="DNS Tool"></li>
+</ul>
+<h3 id="本地优选"><a href="#本地优选" class="headerlink" title="本地优选"></a>本地优选</h3><ul>
+<li>下载 <a href="http://www.crsky.com/soft/88043.html" target="_blank" rel="external">魔方DNS助手</a>，可以方便地检测，选择和修改 DNS</li>
+</ul>
+<p><img src="/resources/dnshelper.png" alt="DNS Helper"></p>
+<blockquote>
+<p>如果更换 DNS 后网络异常，可以尝试 <a href="http://jingyan.baidu.com/article/6d704a13fb6e1828db51ca3a.html" target="_blank" rel="external">刷新本地的DNS缓存</a></p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[在百度分享中使用 Font Awesome 图标]]></title>
+      <url>http://guozhivip.github.io/2016/04/20/baidu-share-fontawesome/</url>
+      <content type="html"><![CDATA[<p>　　百度分享自带的图标有点简陋，而自己站点的图标基本来自 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>，为了美化和统一风格，对其中的图标进行了替换。</p>
+<a id="more"></a>
+<p></p><p data-height="241" data-theme-id="0" data-slug-hash="ZWROBe" data-default-tab="css,result" data-user="MOxFIVE" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/ZWROBe/" target="_blank" rel="external">Baidu Share with Font Awesome</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="载入-Font-Awesome"><a href="#载入-Font-Awesome" class="headerlink" title="载入 Font Awesome"></a>载入 Font Awesome</h3><ul>
+<li>通过 CDN 加载 Font Awesome，一般放在页面头部<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="添加图标-Class"><a href="#添加图标-Class" class="headerlink" title="添加图标 Class"></a>添加图标 Class</h3><ul>
+<li>在官网 <a href="http://fontawesome.io/icons/" target="_blank" rel="external">图标列表</a> 中查询所需代码，添加到百度分享提供的 HTML 代码中</li>
+<li>下面以微博、微信等为例: (<code>fa</code> 这个 class 要保留)</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bdsharebuttonbox"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weibo bds_tsina"</span> <span class="attr">data-cmd</span>=<span class="string">"tsina"</span> <span class="attr">title</span>=<span class="string">"分享到新浪微博"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-qq bds_sqq"</span> <span class="attr">data-cmd</span>=<span class="string">"sqq"</span> <span class="attr">title</span>=<span class="string">"分享给 QQ 好友"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weixin bds_weixin"</span> <span class="attr">data-cmd</span>=<span class="string">"weixin"</span> <span class="attr">title</span>=<span class="string">"生成文章二维码"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-share-alt bds_more"</span> <span class="attr">data-cmd</span>=<span class="string">"more"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="样式修改"><a href="#样式修改" class="headerlink" title="样式修改"></a>样式修改</h2><p>通过 CSS 修改图标的样式，以 微博、微信、QQ 、more(分享到…) 为例，样式已尽可能精简</p>
+<h3 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*部分样式可能会被百度分享自带样式覆盖，因而加上 `!important` 确保生效*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span>, <span class="comment">/*.bds_more 关联较多，需单独设置*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-class">.bds_more</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">50px</span>; <span class="comment">/*设置图标容器宽度*/</span></div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*宽等于高，正方形*/</span></div><div class="line">  <span class="attribute">line-height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*行高等于图标容器高度，垂直居中*/</span></div><div class="line">  <span class="attribute">text-align</span>: center; <span class="comment">/*水平居中*/</span></div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span> <span class="meta">!important</span>; <span class="comment">/*覆盖自带样式，消除内边距*/</span></div><div class="line">  <span class="attribute">font-size</span>: <span class="number">34px</span> <span class="meta">!important</span>; <span class="comment">/*图标大小*/</span></div><div class="line">  <span class="attribute">text-decoration</span>: none; <span class="comment">/*去掉图标下划线*/</span></div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>; <span class="comment">/*图标颜色*/</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="comment">/*鼠标悬停时图标颜色*/</span></div><div class="line"><span class="selector-class">.bds_more</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="图标背景"><a href="#图标背景" class="headerlink" title="图标背景"></a>图标背景</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.bds_tsina</span> &#123; <span class="comment">/*新浪微博图标背景色*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#db332f</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_sqq</span> &#123; <span class="comment">/*QQ*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#1cbcef</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_weixin</span> &#123; <span class="comment">/*微信*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cdc49</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_more</span> &#123; <span class="comment">/*分享到...*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cbcf5</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
+<li><strong>百度分享</strong>: <a href="http://share.baidu.com/" target="_blank" rel="external">http://share.baidu.com/</a></li>
+<li><strong>百度分享网站ID列表</strong>: <a href="http://share.baidu.com/help/webid" target="_blank" rel="external">http://share.baidu.com/help/webid</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CSS 设置文本省略 ellipsis (…)]]></title>
+      <url>http://guozhivip.github.io/2016/04/18/text-overflow-ellipsis/</url>
+      <content type="html"><![CDATA[<p>　　在 CSS 中应用 ellipsis 属性，可显示省略符号(…)来代表被修剪的文本。</p>
+<a id="more"></a>
+<p></p><p data-height="309" data-theme-id="0" data-slug-hash="yOjQKo" data-default-tab="css,result" data-user="MOxFIVE" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/yOjQKo/" target="_blank" rel="external">text-overflow: ellipsis</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="单行省略"><a href="#单行省略" class="headerlink" title="单行省略"></a>单行省略</h2><h3 id="样式代码"><a href="#样式代码" class="headerlink" title="样式代码"></a>样式代码</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span>CSS is awesome, especially when you can scroll to see extra text </div><div class="line">instead of just having it overlap other text by default.<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">span</span> &#123;</div><div class="line">    <span class="attribute">display</span>: block;</div><div class="line">    <span class="attribute">width</span>: <span class="number">14em</span>;</div><div class="line">    <span class="attribute">overflow</span>: hidden;</div><div class="line">    <span class="attribute">text-overflow</span>: ellipsis;</div><div class="line">    <span class="attribute">white-space</span>: nowrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h3><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">text-overflow</span>: ellipsis；</div><div class="line"><span class="comment">// [必需], 文本溢出时显示省略号(…)</span></div><div class="line"></div><div class="line"><span class="attribute">display</span>: block;</div><div class="line"><span class="comment">// [可选], `ellipsis` 只应用于 `block containers`（块级容器），</span></div><div class="line"><span class="comment">// 如果所在 HTML 标签非块级，那需要设置 `display` 属性</span></div><div class="line"></div><div class="line"><span class="attribute">white-space</span>: nowrap;</div><div class="line"><span class="comment">// [必需], 将文本限制在一行内</span></div><div class="line"></div><div class="line"><span class="attribute">overflow</span>: hidden;</div><div class="line"><span class="comment">// [必需], 隐藏溢出的内容</span></div><div class="line"><span class="comment">// 可按需要仅设置 `overflow-y` 或 `overflow-x`</span></div><div class="line"></div><div class="line"><span class="attribute">width</span>: <span class="number">14em</span>;</div><div class="line"><span class="comment">// [可选], 限制容器宽度</span></div><div class="line"><span class="comment">// 可使用 `max-width`</span></div></pre></td></tr></table></figure>
+<h2 id="多行省略"><a href="#多行省略" class="headerlink" title="多行省略"></a>多行省略</h2><p>在指定行数后，才使用省略号代替溢出文本，这可以借助 <code>-webkit-line-clamp</code> 属性实现</p>
+<ul>
+<li>-webkit- 内核属性，不支持 IE 和 Firefox 浏览器 <a href="http://caniuse.com/#search=-webkit-line-clamp" target="_blank" rel="external">查看兼容性</a></li>
+</ul>
+<h3 id="样式代码-1"><a href="#样式代码-1" class="headerlink" title="样式代码"></a>样式代码</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>CSS is awesome, especially when you can scroll to see extra text </div><div class="line">instead of just having it overlap other text by default.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">p</span> &#123;</div><div class="line">    <span class="attribute">display</span>: -webkit-box;</div><div class="line">    <span class="attribute">-webkit-line-clamp</span>: <span class="number">2</span>;</div><div class="line">    <span class="attribute">-webkit-box-orient</span>: vertical;</div><div class="line">    <span class="attribute">width</span>: <span class="number">15em</span>;</div><div class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</div><div class="line">    <span class="attribute">text-overflow</span>: ellipsis;</div><div class="line">    <span class="attribute">overflow </span>: hidden;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="代码简析-1"><a href="#代码简析-1" class="headerlink" title="代码简析"></a>代码简析</h3><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 必需的属性</span></div><div class="line"><span class="attribute">display</span>: -webkit-box; <span class="comment">// 将元素设为弹性盒模型</span></div><div class="line"><span class="attribute">-webkit-line-clamp</span>: <span class="number">2</span>; <span class="comment">// 文本最大行数</span></div><div class="line"><span class="attribute">-webkit-box-orient</span>: vertical; <span class="comment">// 模型内元素垂直排列</span></div><div class="line"><span class="attribute">text-overflow</span>: ellipsis;</div><div class="line"><span class="attribute">overflow </span>: hidden;</div><div class="line"></div><div class="line"><span class="comment">// 可选的样式</span></div><div class="line"><span class="attribute">width</span>: <span class="number">15em</span>; <span class="comment">// 限制容器宽度</span></div><div class="line"><span class="attribute">line-height</span>: <span class="number">1.5</span>; <span class="comment">// 建议增大行高，避免文字被腰斩</span></div></pre></td></tr></table></figure>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong><em>多行文本溢出显示省略号(…)全攻略</em></strong> by <strong>愚人码头</strong> on <code>2014/09/30</code>: <a href="http://www.css88.com/archives/5206" target="_blank" rel="external">http://www.css88.com/archives/5206</a></li>
+<li><strong><em>Overflow Ellipsis: the text-overflow property</em></strong> by <strong>W3C</strong> on <code>2015/07/07</code>: <a href="https://www.w3.org/TR/css-ui-3/#text-overflow" target="_blank" rel="external">https://www.w3.org/TR/css-ui-3/#text-overflow</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Markdown 表格样式调整与自适应优化]]></title>
+      <url>http://guozhivip.github.io/2016/03/04/markdown-table-style/</url>
+      <content type="html"><![CDATA[<p>　　Markdown 写的表格最终会被解析成 HTML 代码，如果使用的编辑器支持自定义 CSS，就能方便的调整样式。如果可以引入 JavaScript，样式自适应也能较好地实现。</p>
+<a id="more"></a>
+<p></p><p data-height="300" data-theme-id="0" data-slug-hash="ONyKqb" data-default-tab="css" data-user="MOxFIVE" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/ONyKqb/" target="_blank" rel="external">Table style</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="样式调整"><a href="#样式调整" class="headerlink" title="样式调整"></a>样式调整</h2><h3 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h3><pre><code>&lt;table&gt;: 表格
+&lt;thead&gt;: table header 表头区
+&lt;th&gt;: table headings 表头单元格内容
+&lt;tbody&gt;: table body 表格内容区
+&lt;tr&gt;: table row 表行
+&lt;td&gt;: table data 单元格内容
+</code></pre><h3 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> &#123;</div><div class="line">    <span class="attribute">width</span>: <span class="number">100%</span>; <span class="comment">/*表格宽度*/</span></div><div class="line">    <span class="attribute">max-width</span>: <span class="number">65em</span>; <span class="comment">/*表格最大宽度，避免表格过宽*/</span></div><div class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#dedede</span>; <span class="comment">/*表格外边框设置*/</span></div><div class="line">    <span class="attribute">margin</span>: <span class="number">15px</span> auto; <span class="comment">/*外边距*/</span></div><div class="line">    <span class="attribute">border-collapse</span>: collapse; <span class="comment">/*使用单一线条的边框*/</span></div><div class="line">    <span class="attribute">empty-cells</span>: show; <span class="comment">/*单元格无内容依旧绘制边框*/</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span>,</div><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">td</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">35px</span>; <span class="comment">/*统一每一行的默认高度*/</span></div><div class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#dedede</span>; <span class="comment">/*内部边框样式*/</span></div><div class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">10px</span>; <span class="comment">/*内边距*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="表头样式"><a href="#表头样式" class="headerlink" title="表头样式"></a>表头样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span> &#123;</div><div class="line">    <span class="attribute">font-weight</span>: bold; <span class="comment">/*加粗*/</span></div><div class="line">    <span class="attribute">text-align</span>: center <span class="meta">!important</span>; <span class="comment">/*内容居中，加上 !important 避免被 Markdown 样式覆盖*/</span></div><div class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(158,188,226,0.2); <span class="comment">/*背景色*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="隔行变色"><a href="#隔行变色" class="headerlink" title="隔行变色"></a>隔行变色</h3><ul>
+<li>使用选择器选取复数行设置背景色。一般 Markdown 表格编译后都有 <code>&lt;tbody&gt;</code> 包裹内容，那下面就相当于从表格第二行开始计数</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">tbody</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:nth-child(2n)</span> &#123;</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(158,188,226,0.12); </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="悬浮变色"><a href="#悬浮变色" class="headerlink" title="悬浮变色"></a>悬浮变色</h3><ul>
+<li>鼠标悬浮时该行改变背景色</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">tr</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">    <span class="attribute">background</span>: <span class="number">#efefef</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="自适应优化"><a href="#自适应优化" class="headerlink" title="自适应优化"></a>自适应优化</h2><p>表格用 Markdown 书写，编辑器解析，因而只能在已经生成好的代码上进行自适应优化。</p>
+<h3 id="表头不换行"><a href="#表头不换行" class="headerlink" title="表头不换行"></a>表头不换行</h3><ul>
+<li>设置表头单元格内容不换行，这样可以通过表头控制该列的最小宽度，避免浏览器窗口缩小时内容被压缩得太紧</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">th</span> &#123;</div><div class="line">    <span class="attribute">white-space</span>: nowrap; <span class="comment">/*表头内容强制在一行显示*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="首列不换行"><a href="#首列不换行" class="headerlink" title="首列不换行"></a>首列不换行</h3><ul>
+<li>表格第一列单元格内容不换行，多数情况下表格首列不应该被压缩换行</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">table</span> <span class="selector-tag">td</span><span class="selector-pseudo">:nth-child(1)</span> &#123;</div><div class="line">    <span class="attribute">white-space</span>: nowrap; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="表格滚动条"><a href="#表格滚动条" class="headerlink" title="表格滚动条"></a>表格滚动条</h3><ul>
+<li>添加 JavaScript 代码，用一个 <code>&lt;div&gt;</code> 把表格包裹起来，父元素宽度不足时显示横向滚动条，避免表格撑破布局</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[].slice.call(<span class="built_in">document</span>.querySelectorAll(<span class="string">'table'</span>)).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">el</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> wrapper = <span class="built_in">document</span>.createElement(<span class="string">'div'</span>);</div><div class="line">    wrapper.className = <span class="string">'table-area'</span>;</div><div class="line">    el.parentNode.insertBefore(wrapper, el);</div><div class="line">    el.parentNode.removeChild(el);</div><div class="line">    wrapper.appendChild(el);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>jQuery</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"table"</span>).wrap(<span class="string">"&lt;div class='table-area'&gt;&lt;/div&gt;"</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>同时添加如下 CSS</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.table-area</span> &#123;</div><div class="line">    <span class="attribute">overflow</span>: auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>To be added</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关联 GitHub, 让 Hexo 支持查看文章更新历史]]></title>
+      <url>http://guozhivip.github.io/2016/01/10/hexo-post-version-control/</url>
+      <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。<p></p>
+<a id="more"></a>
+<p><img src="/resources/version-control.png" alt="version-control"></p>
+<h2 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h2><h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><ul>
+<li>为了便于文章识别和自动关联文件，文章 Markdown 的文件名应该符合规范。</li>
+<li>建议使用 文章建立日期.固定链接 <code>YY-MM-DD.permalink.md</code> 的形式。</li>
+<li>在文章 [Front-matter] 中设置固定链接 permalink，然后填写文件名，例如本文完整文件名为 <code>2016-01-10.hexo-post-version-control.md</code></li>
+<li>为什么不使用文章标题作为文件名:<blockquote>
+<p>一是因为标题偶尔会变动，修改相对麻烦；二是标题可能包含不能用作文件名的符号，导致关联出错。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="文件备份"><a href="#文件备份" class="headerlink" title="文件备份"></a>文件备份</h3><ul>
+<li>把 <code>hexo/sources/_posts</code> 文件夹同步备份到你的 GitHub 上，不熟悉 Git 的可使用 GitHub Desktop 操作，具体方法自行搜索。</li>
+</ul>
+<h2 id="代码添加"><a href="#代码添加" class="headerlink" title="代码添加"></a>代码添加</h2><p>把下面 EJS 代码添加到主题文章模板合适位置中，<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题是添加在文末版权区中。参考备份文件在 Github 的链接修改前半部分地址。</p>
+<figure class="highlight erb"><figcaption><span>yelee/layout/_partial/post/nav.ejs</span><a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">Post Version Control</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h2 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h2><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="comment">&lt;!-- 不设置 backup: false 则默认显示 --&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span> </div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 不同功能替换前面超链接即可，文件名不变 --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 文件名生成: &lt;%=</span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="comment">%&gt;.&lt;%=</span></span> post.slug <span class="xml"><span class="comment">%&gt; --&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h3 id="Blame"><a href="#Blame" class="headerlink" title="Blame"></a>Blame</h3><ul>
+<li>顺序列出文章内容，左侧显示各部分 commit 信息，最后修改时间等。<br><img src="/resources/Blame.png" alt="Blame"></li>
+</ul>
+<h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><ul>
+<li>列出与该文件相关的更新记录 (commit)，按路径匹配。我一般直接就用提交时间作为 commit 信息了，想要更直观查看变动的可以在提交时书写更完善的 commit 信息。</li>
+</ul>
+<p><img src="/resources/History.png" alt="History"></p>
+<h3 id="md-Raw"><a href="#md-Raw" class="headerlink" title=".md Raw"></a>.md Raw</h3><ul>
+<li>在线查看或者直接下载文章原始 Markdown 文本。<br><img src="/resources/Raw.png" alt="Raw"></li>
+</ul>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<ul>
+<li>这是半自动的版本控制，需要手动把文章同步备份到 GitHub；</li>
+<li>代码部分的变动基于 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题，其它主题用户可以参考 <a href="/2015/10/25/hexo-tag-cloud/">另一篇文章</a> 的方法，自行添加代码到合适位置；</li>
+<li>小图标来自 Font Awesome，需主题支持才会正常显示；</li>
+<li>本文不详解 Hexo 基础知识，有设置项不理解的请先阅读 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo 官方帮助文档</a>。</li>
+</ul>
+</blockquote>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>GitHub Desktop</strong>: <a href="https://desktop.github.com/" target="_blank" rel="external">https://desktop.github.com/</a></li>
+<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
+<li><strong>Hexo 使用文档</strong>: <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></li>
+<li><strong><em>Hexo 文章版本控制</em></strong>  by <strong>MOxFIVE</strong> on <code>2016/01/10</code>: <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[为 Hexo 主题添加评论模块 — Disqus, 多说, 友言]]></title>
+      <url>http://guozhivip.github.io/2016/01/02/hexo-comments/</url>
+      <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>目前自己的主题 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。<p></p>
+<a id="more"></a>
+<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><p>参考以下文件结构把复制的代码和下载的文件放到合适的位置，必要时自行修改文件引用位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">yelee/_config.yml</div><div class="line">-----/layout/_partial/article.ejs</div><div class="line">---------------------/comments/disqus.ejs</div><div class="line">------------------------------/duoshuo.ejs</div><div class="line">------------------------------/youyan.ejs</div></pre></td></tr></table></figure>
+<h3 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h3><blockquote>
+<p><a href="/resources/Hexo评论模块.zip">Hexo 评论模块（Disqus, 多说, 友言）.zip</a> by MOxFIVE</p>
+</blockquote>
+<h2 id="关联模块"><a href="#关联模块" class="headerlink" title="关联模块"></a>关联模块</h2><p>在合适位置添加以下代码，以便引入评论模块代码。代码使用我比较熟悉的 EJS 书写，使用 Swig, Jade 等其他模板的，请自行转换。</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt;</div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;!--<span class="comment">//如果不是首页且没使用 `comments: false` 关闭评论，则尝试加载评论 --&gt;</span></div><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中启用多说时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt; </div><div class="line">      &lt;!--<span class="comment">//导入duoshuo.ejs时，同时指定其中几个变量的内容。 --&gt;</span></div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用友言时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用 Disqus 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//以上皆关闭且 Hexo 配置中设置了 disqus_shortname 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;!--<span class="comment">//文件分离和变量的使用，使代码能较好的兼容 Hexo 主配置 --&gt;</span></div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="新评论系统添加"><a href="#新评论系统添加" class="headerlink" title="新评论系统添加"></a>新评论系统添加</h3><ul>
+<li>如果你想使用畅言或者其他社会化评论系统，并能灵活切换，请参考上文，新加一个 else if 判断引入服务商提供的代码，同时参考后文的配置添加新的设置项。</li>
+</ul>
+<h2 id="配置更新"><a href="#配置更新" class="headerlink" title="配置更新"></a>配置更新</h2><p>在主题中添加以下设置项进行评论功能的配置。评论设置为二级选项，因为之前不少人设置了 <code>duoshuo: true</code> ，结果都进群聊了。要启用某一个评论系统，只需去掉 on 前的 “#”，同时按照说明设置好对应个人账号信息即可。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># &gt;&gt;&gt; Conments 评论系统 &lt;&lt;&lt;</span></div><div class="line"><span class="comment"># Chose ONE as your comment system and keep others disable.</span></div><div class="line"><span class="comment"># 选一个作为网站评论系统，其他保持禁用。</span></div><div class="line"></div><div class="line"><span class="attr">disqus:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  shortname:</span> </div><div class="line">  <span class="comment"># https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-</span></div><div class="line">  <span class="comment"># It is unnecessary to enable disqus here if </span></div><div class="line">  <span class="comment"># you have set "disqus_shortname" in your site's "_config.yml" </span></div><div class="line"></div><div class="line"><span class="attr">duoshuo:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  domain:</span> </div><div class="line">  <span class="comment"># 是否开启多说评论，http://duoshuo.com/create-site/</span></div><div class="line">  <span class="comment"># 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分</span></div><div class="line">  <span class="comment"># http://&lt;要填的部分&gt;.duoshuo.com (domain只填上&lt;&gt;里的内容，不要填整个网址)</span></div><div class="line"></div><div class="line"><span class="attr">youyan:</span></div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  id:</span> </div><div class="line">  <span class="comment"># 是否开启友言评论，http://www.uyan.cc/index.php</span></div><div class="line">  <span class="comment"># id 中填写你的友言用户数字ID，注册后进入后台管理即可查看</span></div><div class="line">  <span class="comment"># 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。</span></div><div class="line"></div><div class="line"><span class="comment"># &gt;&gt;&gt; &lt;&lt;&lt;</span></div></pre></td></tr></table></figure>
+<h2 id="模块代码"><a href="#模块代码" class="headerlink" title="模块代码"></a>模块代码</h2><p>模块代码已附在下载文件中，在此同时列出备用。依旧是使用 EJS 编写，引入一些信息，设置了几个变量，使用其他模板引擎请自行转换。所有评论模块都设置了 <code>id=&quot;comments&quot;</code>，以便有需要时通过锚点定位跳转到评论区。</p>
+<h3 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus_thread"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="comment">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */</span></div><div class="line">    <span class="keyword">var</span> disqus_shortname = <span class="string">'&lt;%= shortname%&gt;'</span>; <span class="comment">// required: replace example with your forum shortname</span></div><div class="line"></div><div class="line">    <span class="comment">/* * * DON'T EDIT BELOW THIS LINE * * */</span></div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">var</span> dsq = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>); dsq.type = <span class="string">'text/javascript'</span>; dsq.async = <span class="literal">true</span>;</div><div class="line">      dsq.src = <span class="string">'//'</span> + disqus_shortname + <span class="string">'.disqus.com/embed.js'</span>;</div><div class="line">      (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(dsq);</div><div class="line">    &#125;)();</div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">noscript</span>&gt;</span>Please enable JavaScript to view the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://disqus.com/?ref_noscript"</span>&gt;</span>comments powered by Disqus.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"duoshuo"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 start --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ds-thread"</span> <span class="attr">data-thread-key</span>=<span class="string">"&lt;%= key%&gt;"</span> <span class="attr">data-title</span>=<span class="string">"&lt;%= title%&gt;"</span> <span class="attr">data-url</span>=<span class="string">"&lt;%= url%&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 end --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> duoshuoQuery = &#123;<span class="attr">short_name</span>:<span class="string">"&lt;%= theme.duoshuo.domain%&gt;"</span>&#125;;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">        ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">        ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">        (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </div><div class="line">         || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="友言评论"><a href="#友言评论" class="headerlink" title="友言评论"></a>友言评论</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"youyan"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"uyan_frame"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://v2.uyan.cc/code/uyan.js?uid=&lt;%=</span></span> theme.youyan.id<span class="xml"><span class="tag"><span class="string">%&gt;"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>多说评论</strong>: <a href="http://duoshuo.com/" target="_blank" rel="external">http://duoshuo.com/</a></li>
+<li><strong>友言评论</strong>: <a href="http://www.uyan.cc/" target="_blank" rel="external">http://www.uyan.cc/</a></li>
+<li><strong>Disqus</strong>: <a href="https://disqus.com/" target="_blank" rel="external">https://disqus.com/</a></li>
+<li><strong><em>refactor: comments code &amp; configuration 评论模块优化</em></strong> by <strong>MOxFIVE</strong> on <code>2016/01/01</code>: <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hexo 最常用的几个命令]]></title>
+      <url>http://guozhivip.github.io/2015/12/21/common-hexo-commands/</url>
+      <content type="html"><![CDATA[<style>
+    .article-entry h2 {
+        border-bottom: none;
+    }
+</style>
+
+<p>　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: </p>
+<a id="more"></a>
+<h2 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
+<p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<ul>
+<li><code>hexo s</code> 是 <code>hexo server</code> 的缩写，命令效果一致；</li>
+<li>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li>
+<li>对 Hexo 根目录 <code>_config.yml</code> 的修改，需要重启本地服务器后才能预览效果。</li>
+</ul>
+<h2 id="hexo-n"><a href="#hexo-n" class="headerlink" title="hexo n"></a>hexo n</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n &quot;学习笔记  六&quot;</div></pre></td></tr></table></figure>
+<p>新建一篇标题为 <code>学习笔记  六</code> 的文章，因为标题里有空格，所以加上了引号。</p>
+<ul>
+<li>文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；</li>
+<li><code>hexo n</code> 是 <code>hexo new</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>自动生成网站静态文件，并部署到设定的仓库。</p>
+<ul>
+<li><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
+<p>清除缓存文件 <code>db.json</code> 和已生成的静态文件 <code>public</code>。</p>
+<ul>
+<li>网站显示异常时可以执行这条命令试试。</li>
+</ul>
+<h2 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<p>生成网站静态文件到默认设置的 <code>public</code> 文件夹。</p>
+<ul>
+<li>便于查看网站生成的静态文件或者手动部署网站；</li>
+<li>如果使用自动部署，不需要先执行该命令；</li>
+<li><code>hexo g</code> 是 <code>hexo generate</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-n-page"><a href="#hexo-n-page" class="headerlink" title="hexo n page"></a>hexo n page</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n page aboutme</div></pre></td></tr></table></figure>
+<p>新建一个标题为 <code>aboutme</code> 的页面，默认链接地址为 <code>主页地址/aboutme/</code></p>
+<ul>
+<li>标题可以为中文，但一般习惯用英文；</li>
+<li>页面标题和文章一样可以随意修改；</li>
+<li>页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</li>
+</ul>
+<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean &amp;&amp; hexo s</div><div class="line">hexo clean &amp;&amp; hexo d</div></pre></td></tr></table></figure>
+<p>可以用输入法等软件为这些命令设置快捷键，方便调用。</p>
+<h2 id="相关说明"><a href="#相关说明" class="headerlink" title="相关说明"></a>相关说明</h2><ul>
+<li>以上命令使用基于 Hexo 3.1.1 版本；</li>
+<li>需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 <code>source</code> 文件夹，删除对应文件或文件夹即可；</li>
+<li>更多命令用法请查询 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">官方文档</a>。</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Sublime Text 3 使用配置与插件安装]]></title>
+      <url>http://guozhivip.github.io/2015/11/30/sublime-config/</url>
+      <content type="html"><![CDATA[<p>　　记录安装配置 Sublime 的过程，同时列出所用到的插件，方便自己在新系统新电脑上快速用上熟悉的 Sublime。 </p>
+<a id="more"></a>
+<h2 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h2><h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><ul>
+<li>一直使用的是 Sublime 3，直接转到 3 的 <a href="http://www.sublimetext.com/3" target="_blank" rel="external">下载页面</a> 好了。</li>
+</ul>
+<h3 id="用户设置"><a href="#用户设置" class="headerlink" title="用户设置"></a>用户设置</h3><ul>
+<li><code>Preferences/Settings - User</code>，设置字体为 <a href="http://pan.baidu.com/s/1mglgkSK" target="_blank" rel="external">Consolas 雅黑混合体</a> yx5g，字号11，tab 转空格，显示空格和制表符。</li>
+</ul>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="string">"font_face"</span>: <span class="string">"Yahei Consolas Hybrid"</span>,</div><div class="line"><span class="string">"font_size"</span>: <span class="number">11</span>,</div><div class="line"><span class="string">"translate_tabs_to_spaces"</span>: <span class="literal">true</span>,</div><div class="line"><span class="string">"draw_white_space"</span>: <span class="string">"all"</span>,</div><div class="line"></div><div class="line"><span class="comment">/*统一使用 UTF-8 编码和 UNIX 风格的换行符(LF, 0x0A)*/</span></div><div class="line"><span class="string">"default_line_ending"</span>: <span class="string">"unix"</span>,</div><div class="line"><span class="string">"default_encoding"</span>: <span class="string">"UTF-8"</span>,</div></pre></td></tr></table></figure>
+<blockquote>
+<p>其他设置参考 <code>Preferences/Settings - Default</code>。</p>
+</blockquote>
+<h2 id="基础插件"><a href="#基础插件" class="headerlink" title="基础插件"></a>基础插件</h2><h3 id="Package-Control"><a href="#Package-Control" class="headerlink" title="Package Control"></a><a href="https://packagecontrol.io/" target="_blank" rel="external">Package Control</a></h3><ul>
+<li>用于管理插件的插件，基础中的基础。之后列的插件全部通过 Package Control 安装。<blockquote>
+<p>插件使用与安装: <a href="https://packagecontrol.io/installation" target="_blank" rel="external">https://packagecontrol.io/installation</a></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Convert​To​UTF8"><a href="#Convert​To​UTF8" class="headerlink" title="Convert​To​UTF8"></a><a href="https://packagecontrol.io/packages/ConvertToUTF8" target="_blank" rel="external">Convert​To​UTF8</a></h3><ul>
+<li>文本编码自动转换，减少中日韩文乱码问题。<blockquote>
+<p>插件安装: Ctrl+Shift+P, Package Control: Installed Packages, 搜索 Convert​To​UTF8</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="IMESupport"><a href="#IMESupport" class="headerlink" title="IMESupport"></a><a href="https://packagecontrol.io/packages/IMESupport" target="_blank" rel="external">IMESupport</a></h3><ul>
+<li>解决输入法选字框不跟随问题。</li>
+</ul>
+<h3 id="Side​Bar​Enhancements"><a href="#Side​Bar​Enhancements" class="headerlink" title="Side​Bar​Enhancements"></a><a href="https://packagecontrol.io/packages/SideBarEnhancements" target="_blank" rel="external">Side​Bar​Enhancements</a></h3><ul>
+<li>自带边栏功能太少，必须安装此插件增强一下。</li>
+</ul>
+<h2 id="主题配色"><a href="#主题配色" class="headerlink" title="主题配色"></a>主题配色</h2><h3 id="Theme-Spacegray"><a href="#Theme-Spacegray" class="headerlink" title="Theme - Spacegray"></a><a href="https://packagecontrol.io/packages/Theme%20-%20Spacegray" target="_blank" rel="external">Theme - Spacegray</a></h3><ul>
+<li>Spacegray 主题的 Base16 Eighties Dark 配色方案看着最顺眼，用着最舒服。<br><img src="/resources/Base16-Eighties-Dark.jpg" alt="Base16 Eighties Dark color scheme"></li>
+</ul>
+<h2 id="代码规范"><a href="#代码规范" class="headerlink" title="代码规范"></a>代码规范</h2><h3 id="Sublime​Linter"><a href="#Sublime​Linter" class="headerlink" title="Sublime​Linter"></a><a href="https://packagecontrol.io/packages/SublimeLinter" target="_blank" rel="external">Sublime​Linter</a></h3><ul>
+<li>用于管理其他 code linting 代码规范插件。<blockquote>
+<p>使用说明: <a href="http://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc" target="_blank" rel="external">http://sublimelinter.readthedocs.org/en/latest/installation.html#installing-via-pc</a></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Sublime​Linter-jshint"><a href="#Sublime​Linter-jshint" class="headerlink" title="Sublime​Linter-jshint"></a><a href="https://packagecontrol.io/packages/SublimeLinter-jshint" target="_blank" rel="external">Sublime​Linter-jshint</a></h3><ul>
+<li>基于 <a href="http://jshint.com/" target="_blank" rel="external">JSHint</a>，用于检查规范 JavaScript 代码。<blockquote>
+<p>NPM 依赖包: <code>npm install -g jshint</code><br>使用说明: <a href="https://github.com/SublimeLinter/SublimeLinter-jshint" target="_blank" rel="external">https://github.com/SublimeLinter/SublimeLinter-jshint</a></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Sublime​Linter-csslint"><a href="#Sublime​Linter-csslint" class="headerlink" title="Sublime​Linter-csslint"></a><a href="https://packagecontrol.io/packages/SublimeLinter-csslint" target="_blank" rel="external">Sublime​Linter-csslint</a></h3><ul>
+<li>基于 <a href="https://github.com/CSSLint/csslint" target="_blank" rel="external">CSSLint</a>，用于检查规范 CSS 代码。<blockquote>
+<p>NPM 依赖包: <code>npm install -g csslint</code><br>使用说明: <a href="https://github.com/SublimeLinter/SublimeLinter-csslint" target="_blank" rel="external">https://github.com/SublimeLinter/SublimeLinter-csslint</a></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="Sublime​Linter-contrib-htmlhint"><a href="#Sublime​Linter-contrib-htmlhint" class="headerlink" title="Sublime​Linter-contrib-htmlhint"></a><a href="https://packagecontrol.io/packages/SublimeLinter-contrib-htmlhint" target="_blank" rel="external">Sublime​Linter-contrib-htmlhint</a></h3><ul>
+<li>基于 <a href="http://htmlhint.com/" target="_blank" rel="external">HTMLHint</a>，用于检查规范 HTML 代码。<blockquote>
+<p>NPM 依赖包: <code>npm install -g htmlhint@latest</code><br>使用说明: <a href="https://github.com/mmaday/SublimeLinter-contrib-htmlhint" target="_blank" rel="external">https://github.com/mmaday/SublimeLinter-contrib-htmlhint</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><h3 id="HTML-CSS-JS-Prettify"><a href="#HTML-CSS-JS-Prettify" class="headerlink" title="HTML-CSS-JS Prettify"></a><a href="https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify" target="_blank" rel="external">HTML-CSS-JS Prettify</a></h3><ul>
+<li>格式化 HTML, CSS, JavaScript 及 JSON 代码。</li>
+</ul>
+<h3 id="Color-Highlighter"><a href="#Color-Highlighter" class="headerlink" title="Color Highlighter"></a><a href="https://packagecontrol.io/packages/Color%20Highlighter" target="_blank" rel="external">Color Highlighter</a></h3><ul>
+<li>直接在代码中预览颜色。</li>
+</ul>
+<h3 id="Stylus"><a href="#Stylus" class="headerlink" title="Stylus"></a><a href="https://packagecontrol.io/packages/Stylus" target="_blank" rel="external">Stylus</a></h3><ul>
+<li>使代码高亮支持 Stylus。</li>
+</ul>
+<h3 id="Stylus-Clean-Completions"><a href="#Stylus-Clean-Completions" class="headerlink" title="Stylus Clean Completions"></a><a href="https://packagecontrol.io/packages/Stylus%20Clean%20Completions" target="_blank" rel="external">Stylus Clean Completions</a></h3><ul>
+<li>Stylus 代码自动补全。</li>
+</ul>
+<h3 id="AutoFileName"><a href="#AutoFileName" class="headerlink" title="AutoFileName"></a><a href="https://packagecontrol.io/packages/AutoFileName" target="_blank" rel="external">AutoFileName</a></h3><ul>
+<li>文件名自动补全。<br><img src="/resources/autofilename.png" alt="AutoFileName"></li>
+</ul>
+<h3 id="Can-I-Use"><a href="#Can-I-Use" class="headerlink" title="Can I Use"></a><a href="https://packagecontrol.io/packages/Can%20I%20Use" target="_blank" rel="external">Can I Use</a></h3><ul>
+<li><a href="http://caniuse.com/" target="_blank" rel="external">http://caniuse.com/</a> 的插件版，快速查询 HTML, CSS 等前端技术的浏览器兼容性</li>
+</ul>
+<h3 id="BracketHighlighter"><a href="#BracketHighlighter" class="headerlink" title="BracketHighlighter"></a><a href="https://packagecontrol.io/packages/BracketHighlighter" target="_blank" rel="external">BracketHighlighter</a></h3><ul>
+<li>调整各类括号匹配的高亮样式</li>
+</ul>
+<h3 id="To-be-added"><a href="#To-be-added" class="headerlink" title="To be added"></a>To be added</h3><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>Package Control</strong>: <a href="https://packagecontrol.io/" target="_blank" rel="external">https://packagecontrol.io/</a></li>
+<li><strong>SublimeLinter</strong>: <a href="http://sublimelinter.readthedocs.org/" target="_blank" rel="external">http://sublimelinter.readthedocs.org/</a></li>
+<li><strong>JSHint</strong>: <a href="http://jshint.com/" target="_blank" rel="external">http://jshint.com/</a></li>
+<li><strong>CSSLint</strong>: <a href="https://github.com/CSSLint/csslint" target="_blank" rel="external">https://github.com/CSSLint/csslint</a></li>
+<li><strong>HTMLHint</strong>: <a href="http://htmlhint.com/" target="_blank" rel="external">http://htmlhint.com/</a></li>
+<li><strong>Stylus</strong>: <a href="http://learnboost.github.io/stylus/" target="_blank" rel="external">http://learnboost.github.io/stylus/</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Anki 自用卡片模板分享]]></title>
+      <url>http://guozhivip.github.io/2015/11/23/anki-templates/</url>
+      <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2><a href="http://ankisrs.net/" target="_blank" rel="external">Anki</a> 是一款卡片式的记忆辅助软件。软件在保持轻巧简洁的同时，各种设置也很丰富。另外， Anki 通过嵌入式的网页来展示卡片，大大增强了卡片样式的自定义功能。下面是目前自己常用的卡片样式代码，有折腾闲情的可以试试。<p></p>
+<a id="more"></a>
+<h2 id="基础模板"><a href="#基础模板" class="headerlink" title="基础模板"></a>基础模板</h2><p>标题居中，用不同背景色区分答案类型，设置圆角等样式。<br><img src="/resources/Anki-a1.png" alt="Anki-a1"></p>
+<h3 id="模板使用区域"><a href="#模板使用区域" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
+<li>主要需要填写如图所示4个区域。<br><img src="/resources/Anki-a2.png" alt="Anki-a2"></li>
+</ul>
+<h3 id="正面模板"><a href="#正面模板" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"&#123;&#123;logo&#125;&#125;"</span> <span class="attr">class</span>=<span class="string">"logo"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"font-size:2em"</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.logo</span> &#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">9em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">2em</span> <span class="number">0</span> <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	 <span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	 <span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	 <span class="attribute">text-align</span>: justify;</div><div class="line">	 <span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	 <span class="attribute">border-radius</span>: <span class="number">1.2em</span> .<span class="number">3em</span>;</div><div class="line">	 <span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="背面模板"><a href="#背面模板" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;FrontSide&#125;&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>=<span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="带页脚模板"><a href="#带页脚模板" class="headerlink" title="带页脚模板"></a>带页脚模板</h2><p>加了页脚，左下显示标签分类信息，右下链接到设定的网址。</p>
+<p><img src="/resources/Anki-b1.png" alt="Anki-b1"></p>
+<h3 id="模板使用区域-1"><a href="#模板使用区域-1" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
+<li>主要需要填写如图所示5个区域。</li>
+</ul>
+<p><img src="/resources/Anki-b2.png" alt="Anki-b2"></p>
+<h3 id="正面模板-1"><a href="#正面模板-1" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">title</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">author</span>&gt;</span>M.ZH<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="样式-1"><a href="#样式-1" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">1.2em</span> <span class="number">0.3em</span>;</div><div class="line">	<span class="attribute">padding </span>: <span class="number">0.5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: .<span class="number">5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.front</span> &#123;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.8em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.item_eng</span> &#123;</div><div class="line">	<span class="attribute">padding-top </span>: <span class="number">5%</span>;</div><div class="line">	<span class="attribute">color</span>: orange;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">2em</span>;</div><div class="line"> &#125;</div><div class="line"><span class="selector-class">.tag</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span> &#123;</div><div class="line">	<span class="attribute">color</span>: grey;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.title</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.author</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.link</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">	<span class="attribute">font-style</span>: italic;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="背面模板-1"><a href="#背面模板-1" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>= <span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;image&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123;Link&#125;&#125;"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">link</span>&gt;</span>Reference Site<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">tag</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="字体下载"><a href="#字体下载" class="headerlink" title="字体下载"></a>字体下载</h2><p>测试了不少字体，感觉 <a href="http://www.daimg.com/download.php?open=2&amp;id=12741&amp;uhash=1eb7c629071a1341f83bc53b" target="_blank" rel="external">方正中雅宋_GBK</a> 和这个软件最匹配。当然，大家可以自行修改<code>font-family</code>，换用喜欢的字体。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Git 基础命令与相关术语]]></title>
+      <url>http://guozhivip.github.io/2015/11/23/git-command/</url>
+      <content type="html"><![CDATA[<p>　　笔记基本上整理自网站 <a href="https://try.github.io" target="_blank" rel="external">Try Git</a>，一套很不错的 Git 在线入门教程。</p>
+<a id="more"></a>
+<h2 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h2><p>To initialize a Git repository here</p>
+<h3 id="Directory"><a href="#Directory" class="headerlink" title="Directory"></a>Directory</h3><ul>
+<li>A folder used for storing multiple files.</li>
+</ul>
+<h3 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h3><ul>
+<li>A directory where Git has been initialized to start version controlling your files.</li>
+</ul>
+<h2 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h2><p>See what the current state of the project is.</p>
+<h3 id="staged"><a href="#staged" class="headerlink" title="staged"></a>staged</h3><ul>
+<li>Files are ready to be committed.<h3 id="unstaged"><a href="#unstaged" class="headerlink" title="unstaged"></a>unstaged</h3></li>
+<li>Files with changes that have not been prepared to be committed.<h3 id="untracked"><a href="#untracked" class="headerlink" title="untracked"></a>untracked</h3></li>
+<li>Files aren’t tracked by Git yet. This usually indicates a newly created file.<h3 id="deleted"><a href="#deleted" class="headerlink" title="deleted"></a>deleted</h3></li>
+<li>File has been deleted and is waiting to be removed from Git.</li>
+</ul>
+<h2 id="git-add-lt-file-gt"><a href="#git-add-lt-file-gt" class="headerlink" title="git add &lt;file&gt;"></a>git add <code>&lt;file&gt;</code></h2><p>Add files to the staging area.</p>
+<h3 id="Staging-Area"><a href="#Staging-Area" class="headerlink" title="Staging Area"></a>Staging Area</h3><ul>
+<li>A place where we can group files together before we “commit” them to Git.<br>Commit</li>
+</ul>
+<h3 id="add-all"><a href="#add-all" class="headerlink" title="add all"></a>add all</h3><ul>
+<li>You can also type <code>git add -A</code> . where the dot stands for the current directory, so everything in and beneath it is added. The <code>-A</code> ensures even file deletions are included.</li>
+</ul>
+<h2 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h2><p>You can use <code>git reset &lt;filename&gt;</code> to remove a file or files from the staging area.</p>
+<h2 id="Commit"><a href="#Commit" class="headerlink" title="Commit"></a>Commit</h2><p>A “commit” is a snapshot of our repository. This way if we ever need to look back at the changes we’ve made (or if someone else does), we will see a nice timeline of all changes.</p>
+<h3 id="git-commit-m-“msg”"><a href="#git-commit-m-“msg”" class="headerlink" title="git commit -m “msg”"></a>git commit -m “msg”</h3><ul>
+<li>To store our staged changes we run the commit command with a message describing what we’ve changed. </li>
+</ul>
+<h3 id="‘-a’-option"><a href="#‘-a’-option" class="headerlink" title="‘-a’ option"></a>‘-a’ option</h3><ul>
+<li>Auto removes deleted files with the commit.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -am &quot;msg&quot;</div></pre></td></tr></table></figure>
+<h2 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h2><p>a journal that remembers all the changes we’ve committed so far</p>
+<h3 id="git-log-–summary"><a href="#git-log-–summary" class="headerlink" title="git log –summary"></a>git log –summary</h3><ul>
+<li>see more information for each commit. You can see where new files were added for the first time or where files were deleted. It’s a good overview of what’s going on in the project.</li>
+</ul>
+<h2 id="git-remote"><a href="#git-remote" class="headerlink" title="git remote"></a>git remote</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git remote add &lt;remote name&gt; &lt;repository URL&gt;</div><div class="line">git remote add origin https://github.com/try-git/try_git.git</div></pre></td></tr></table></figure>
+<p>Git doesn’t care what you name your remotes, but it’s typical to name your main one <code>origin</code>.</p>
+<p>It’s also a good idea for your main repository to be on a remote server like GitHub in case your machine is lost at sea during a transatlantic boat cruise or crushed by three monkey statues during an earthquake.</p>
+<h2 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h2><p>Tells Git where to put our commits when we’re ready.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git push -u &lt;remote name&gt; &lt;branch name&gt;</div><div class="line">git push -u origin master</div></pre></td></tr></table></figure>
+<p>The <code>-u</code> tells Git to remember the parameters, so that next time we can simply run <code>git push</code>.</p>
+<h2 id="git-stash"><a href="#git-stash" class="headerlink" title="git stash"></a>git stash</h2><p>Sometimes when you go to pull you may have changes you don’t want to commit just yet. One option you have, other than commiting, is to stash the changes.</p>
+<p>Use the command <code>git stash</code> to stash your changes, and <code>git stash apply</code> to re-apply your changes after your pull.</p>
+<h2 id="git-pull"><a href="#git-pull" class="headerlink" title="git pull"></a>git pull</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git push &lt;remote name&gt; &lt;branch name&gt;</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<p>Check for changes on remote repository and pull down any new changes.</p>
+<h2 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h2><p>A good overview of changes we have made and lets us add files or directories one at a time and commit them separately.</p>
+<h3 id="git-diff-HEAD"><a href="#git-diff-HEAD" class="headerlink" title="git diff HEAD"></a>git diff HEAD</h3><ul>
+<li>Show what is different from our last commit. <code>HEAD</code> points to your most recent commit by default.</li>
+</ul>
+<h3 id="git-diff-–staged"><a href="#git-diff-–staged" class="headerlink" title="git diff –staged"></a>git diff –staged</h3><ul>
+<li>Look at changes within files that have already been staged.</li>
+</ul>
+<h2 id="git-checkout-–-lt-target-gt"><a href="#git-checkout-–-lt-target-gt" class="headerlink" title="git checkout – &lt;target&gt;"></a>git checkout – <code>&lt;target&gt;</code></h2><p>Changed files back to how they were at the last commit, namely get rid of all the changes since the last commit.</p>
+<p><code>--</code>: promise the command line that there are no more options after the ‘–’, avoid switching to the branch of the same name.</p>
+<h2 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h2><p>List local branches of now repository.</p>
+<h3 id="git-branch-lt-name-gt"><a href="#git-branch-lt-name-gt" class="headerlink" title="git branch &lt;name&gt;"></a>git branch <code>&lt;name&gt;</code></h3><ul>
+<li>Create a new branch.</li>
+</ul>
+<blockquote>
+<p>When developers are working on a feature or bug they’ll often create a copy (aka. branch) of their code they can make separate commits to. Then when they’re done they can merge this branch back into their main master branch.</p>
+</blockquote>
+<h3 id="git-checkout-lt-branch-gt"><a href="#git-checkout-lt-branch-gt" class="headerlink" title="git checkout &lt;branch&gt;"></a>git checkout <code>&lt;branch&gt;</code></h3><ul>
+<li>Switch to certain branch.</li>
+</ul>
+<h3 id="git-checkout-b-new-branch"><a href="#git-checkout-b-new-branch" class="headerlink" title="git checkout -b new_branch"></a>git checkout -b new_branch</h3><ul>
+<li>Checkout and create a branch at the same time. </li>
+</ul>
+<h2 id="git-rm-lt-file-gt"><a href="#git-rm-lt-file-gt" class="headerlink" title="git rm &lt;file&gt;"></a>git rm <code>&lt;file&gt;</code></h2><p>Not only remove the actual files from disk, but will also stage the removal of the files for us.</p>
+<h3 id="git-rm-r-folder"><a href="#git-rm-r-folder" class="headerlink" title="git rm -r folder"></a>git rm -r folder</h3><ul>
+<li>Recursively remove all folders and files from the given directory.</li>
+</ul>
+<h2 id="git-merge-lt-branch-gt"><a href="#git-merge-lt-branch-gt" class="headerlink" title="git merge &lt;branch&gt;"></a>git merge <code>&lt;branch&gt;</code></h2><p>Merge your changes from the given branch into current branch.</p>
+<h3 id="Merge-Conflicts"><a href="#Merge-Conflicts" class="headerlink" title="Merge Conflicts"></a>Merge Conflicts</h3><ul>
+<li>Merge Conflicts can occur when changes are made to a file at the same time. Reading more on <a href="http://git-scm.com/docs/git-merge#_how_conflicts_are_presented" target="_blank" rel="external">how conflicts are presented</a>.</li>
+</ul>
+<h2 id="Delete-Branch"><a href="#Delete-Branch" class="headerlink" title="Delete Branch"></a>Delete Branch</h2><h3 id="git-branch-d-lt-branch-gt"><a href="#git-branch-d-lt-branch-gt" class="headerlink" title="git branch -d &lt;branch&gt;"></a>git branch -d <code>&lt;branch&gt;</code></h3><ul>
+<li>Delete a local branch. <code>-d</code> won’t let you delete something that hasn’t been merged.</li>
+</ul>
+<h3 id="f-and-D"><a href="#f-and-D" class="headerlink" title="-f and -D"></a><code>-f</code> and <code>-D</code></h3><ul>
+<li>Force delete the branch that hasn’t been merged. </li>
+</ul>
+<blockquote>
+<p>Add the <code>-f</code>(–force) option or use <code>-D</code> which combines <code>-d -f</code> together into one command.</p>
+</blockquote>
+<h3 id="Delete-Remote-Branch"><a href="#Delete-Remote-Branch" class="headerlink" title="Delete Remote Branch"></a>Delete Remote Branch</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -r -d &lt;remote name&gt;/&lt;branch name&gt;</div><div class="line">git push &lt;remote name&gt;: &lt;branch name&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -r -d origin/branch-name</div><div class="line">git push origin :branch-name</div></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[制作透明背景 PNG 图片和 GIF 动图的几种方法]]></title>
+      <url>http://guozhivip.github.io/2015/11/16/png-gif-transparency/</url>
+      <content type="html"><![CDATA[<p>　　偶尔需要将图片的背景透明，渐渐掌握了几种较为简便的处理方法。写篇文章记录一下经验，免得自己哪天又忘了。</p>
+<a id="more"></a>
+<h2 id="PowerPoint-→-PNG"><a href="#PowerPoint-→-PNG" class="headerlink" title="PowerPoint → PNG"></a>PowerPoint → PNG</h2><blockquote>
+<p>微软幻灯片工具 PowerPoint 也可以用来简单处理下图片，比如透明化背景。</p>
+</blockquote>
+<ol>
+<li><p>打开 PowerPoint，新建一张幻灯片页面，然后把待处理的图片拖进去。</p>
+</li>
+<li><p>依次点击<code>格式</code>选项卡 - <code>颜色</code>菜单 - <code>设置透明色</code> - 点选背景色。这样背景就透明化了，再右键图片另存为 PNG 格式即可。</p>
+</li>
+</ol>
+<ul>
+<li><code>删除背景</code>功能类似，不过感觉没上面的方式快捷。</li>
+</ul>
+<p><img src="/resources/PPT-PNG.jpg" alt="PPT-PNG"></p>
+<h2 id="PhotoShop-→-PNG"><a href="#PhotoShop-→-PNG" class="headerlink" title="PhotoShop → PNG"></a>PhotoShop → PNG</h2><blockquote>
+<p>如果电脑上安了 PhotoShop，那我们可以更灵活地制作透明背景图片。</p>
+</blockquote>
+<ol>
+<li><p>用 PS 打开待处理的静态图片，双击图层框右侧<code>小锁</code>标志解锁图层;</p>
+</li>
+<li><p>选用<code>魔棒工具</code>，调整<code>容差</code>为10左右(容差越大，选取的相似颜色越多)，勾选<code>消除锯齿</code>;</p>
+</li>
+<li><p>点选背景，按键盘<code>del</code>键删除之(按住<code>shitf</code>键可以多选)，之后将图片另存为 PNG 格式即可。</p>
+</li>
+</ol>
+<p><img src="/resources/PS-PNG.jpg" alt="PS-PNG"></p>
+<h2 id="PhotoShop-→-GIF"><a href="#PhotoShop-→-GIF" class="headerlink" title="PhotoShop → GIF"></a>PhotoShop → GIF</h2><blockquote>
+<p>PhotoShop 用来透明化 GIF 动图背景也是很方便的。</p>
+</blockquote>
+<ol>
+<li><p>用 PS 打开待处理的 GIF 动图，并确保<code>时间轴</code>窗口已显示(<code>窗口</code>菜单 - 勾选<code>时间轴</code>)；</p>
+</li>
+<li><p>全选<code>时间轴</code>中的图片(可利用<code>shift</code>键全选)，右键图片，勾选<code>自动</code>(跳过此步生产的动图会有重影)；</p>
+</li>
+<li><p>点击<code>文件</code>菜单 - <code>存储为 Web 所用格式...</code>；</p>
+</li>
+<li><p>在颜色表中，先点选的小星点，再点击下方第一个按钮将背景透明，之后点击<code>存储...</code>保存 GIF 到目标位置即可。</p>
+</li>
+</ol>
+<p><img src="/resources/PS-GIF-1.jpg" alt="PS-GIF-1"><br><img src="/resources/PS-GIF-2.jpg" alt="PS-GIF-2"></p>
+<h2 id="一些成品"><a href="#一些成品" class="headerlink" title="一些成品"></a>一些成品</h2><p>展示一些已经透明化背景的图片。</p>
+<p><img src="/resources/Mihawk.gif" alt="Mihawk"><img src="/resources/food-boy.gif" alt="food-boy"><img src="/resources/bilibili.gif" alt="bilibili"></p>
+<h2 id="拓展阅读"><a href="#拓展阅读" class="headerlink" title="拓展阅读"></a>拓展阅读</h2><ol>
+<li><strong><em>移动端图片格式调研</em></strong> by <strong>ibireme</strong> on <code>2015/11/2</code>: <a href="http://blog.ibireme.com/2015/11/02/mobile_image_benchmark/" target="_blank" rel="external">http://blog.ibireme.com/2015/11/02/mobile_image_benchmark/</a></li>
+<li><strong><em>解决GIF动画图去背景后出现的重影</em></strong> by <strong>有烟飘过</strong> on <code>2010/5/10</code>: <a href="http://tieba.baidu.com/p/2106457600" target="_blank" rel="external">http://tieba.baidu.com/p/2106457600</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Web Style Guide 前端代码规范]]></title>
+      <url>http://guozhivip.github.io/2015/11/09/web-style-guide/</url>
+      <content type="html"><![CDATA[<p>　　在此记录自己已理解并开始遵循的前端代码规范。What How Why</p>
+<a id="more"></a>
+<h2 id="General-style-rules"><a href="#General-style-rules" class="headerlink" title="General style rules"></a>General style rules</h2><h3 id="Filename"><a href="#Filename" class="headerlink" title="Filename"></a>Filename</h3><ul>
+<li>Start a file name with a letter and avoid numbers:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">thousand-and-one-scripts.js</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>Start a filename with a special sign in order to flag it for a special purpose.</p>
+</blockquote>
+<ul>
+<li>Lower case in filename:</li>
+</ul>
+<blockquote>
+<p>Some operating systems support case sensitive file names and we should not mix the cases to minimize confusion and possible sources for human errors.</p>
+</blockquote>
+<h3 id="Separator"><a href="#Separator" class="headerlink" title="Separator"></a>Separator</h3><ul>
+<li>Use minus (-) sign as separating parts:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">my-script.js</div><div class="line">my-camel-case-name.css</div><div class="line">i-love-underscores.html</div><div class="line">my-script.js</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<ol>
+<li>For readability purpose. Users may mistake the underscores for spaces, as the underlining in the link hides the underscores;</li>
+<li>It’s a common separator in canonical URL and URL slugs;</li>
+</ol>
+</blockquote>
+<ul>
+<li>Use dot’s to separate the clear purpose of this additional meta-data in a filename:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">my-file.min.css</div></pre></td></tr></table></figure>
+<h3 id="Protocol"><a href="#Protocol" class="headerlink" title="Protocol"></a>Protocol</h3><ul>
+<li>Omit the protocol portion (http:, https:):</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//cdn.com/foundation.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">background: url(//static.example.com/images/bg.jpg)</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>Makes the URL relative—prevents mixed content issues;</li>
+<li>Saves file size.</li>
+</ol>
+</blockquote>
+<h3 id="Text-indentation"><a href="#Text-indentation" class="headerlink" title="Text indentation"></a>Text indentation</h3><ul>
+<li>Indent by 4 spaces at a time. Hitting the Tab key in your text editor should generate four space characters rather than one tab character:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Fantastic<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Great<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>Test<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>Make code appearing identical across platforms;</li>
+<li>Developers can make adjustments to their editing environments a single time.</li>
+</ol>
+</blockquote>
+<h3 id="Comments"><a href="#Comments" class="headerlink" title="Comments"></a>Comments</h3><ul>
+<li>Comment why it was coded this way and comment the thinking behind. Also include links in your comments to open issues, specifications etc.</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> offset = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="keyword">if</span>(includeLabels) &#123;</div><div class="line">  <span class="comment">// If the labels are included we need to have a minimum offset of 20 pixels</span></div><div class="line">  <span class="comment">// We need to set it explicitly because of the following bug: http://somebrowservendor.com/issue-tracker/ISSUE-1</span></div><div class="line">  offset = <span class="number">20</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Use tools to generates API documentation from comments. <a href="http://usejsdoc.org/" target="_blank" rel="external">JSDoc</a> or <a href="http://yui.github.io/yuidoc/" target="_blank" rel="external">YUIDoc</a></li>
+</ul>
+<h3 id="Code-linting"><a href="#Code-linting" class="headerlink" title="Code linting"></a>Code linting</h3><ul>
+<li>Writing and following a style guide is a good practice but having an automated process that is enforcing it is even better. </li>
+</ul>
+<h2 id="HTML-style-rules"><a href="#HTML-style-rules" class="headerlink" title="HTML style rules"></a>HTML style rules</h2><h3 id="Document-type"><a href="#Document-type" class="headerlink" title="Document type"></a>Document type</h3><ul>
+<li>HTML5 (HTML syntax) is preferred for all HTML documents:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="Script-loading"><a href="#Script-loading" class="headerlink" title="Script loading"></a>Script loading</h3><ul>
+<li>Add your script element just before the body close tag and add them with a async attribute:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- body goes here --&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"main.js"</span> <span class="attr">async</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>On modern browsers, this will asynchronously load the script and don’t wait for CSSOM to complete before loading;</li>
+<li>On older browsers (IE9-), prevent DOM parser blocking, not affecting the user experience too much.</li>
+</ol>
+</blockquote>
+<h3 id="Type-attributes"><a href="#Type-attributes" class="headerlink" title="Type attributes"></a>Type attributes</h3><ul>
+<li>Omit type attributes for style sheets and scripts:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"main.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"main.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>HTML5 implies text/css and text/javascript as defaults;<br>This can be safely done even for older browsers.</p>
+</blockquote>
+<h3 id="ID-in-Headings"><a href="#ID-in-Headings" class="headerlink" title="ID in Headings"></a>ID in Headings</h3><ul>
+<li>Give all headings a ID:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h3</span> <span class="attr">id</span>=<span class="string">"best-practices"</span>&gt;</span>Best practices<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>IDs for anchors, enter the URL to scroll to the position this element.</li>
+</ol>
+</blockquote>
+<h3 id="Quotation-marks"><a href="#Quotation-marks" class="headerlink" title="Quotation marks"></a>Quotation marks</h3><ul>
+<li>Use double quotation marks (“”) to quote attributes values:</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"news-article"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="0-values"><a href="#0-values" class="headerlink" title="0 values"></a>0 values</h3><ul>
+<li>Do not use units after 0 values unless they are required:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">padding-bottom</span>: 0;</div><div class="line"><span class="selector-tag">margin</span>: 0;</div></pre></td></tr></table></figure>
+<h3 id="Shorthand-Properties"><a href="#Shorthand-Properties" class="headerlink" title="Shorthand Properties"></a>Shorthand Properties</h3><ul>
+<li>Should be used whenever possible, even in cases where only one value is explicitly set.</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">border-top: 0;</div><div class="line">font: 100%/1.6 palatino, georgia, serif;</div><div class="line">padding: 0 1em 2em;</div></pre></td></tr></table></figure>
+<blockquote>
+<ol>
+<li>Useful for code efficiency and understandability.</li>
+</ol>
+</blockquote>
+<h3 id="Hexadecimal-Notation"><a href="#Hexadecimal-Notation" class="headerlink" title="Hexadecimal Notation"></a>Hexadecimal Notation</h3><ul>
+<li>Use 3 character hexadecimal notation where possible and lower case hex digits:</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">color</span>: <span class="selector-id">#f3a</span>;</div><div class="line"><span class="selector-tag">color</span>: <span class="selector-id">#d4ddef</span>;</div></pre></td></tr></table></figure>
+<h2 id="To-be-continued"><a href="#To-be-continued" class="headerlink" title="To be continued"></a>To be continued</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><strong><em>Web Styleguide - Style guide to harmonize HTML, Javascript and CSS / Sass coding style</em></strong> by <strong>Gion Kunz</strong> on <code>2014/10/8</code>: <a href="https://github.com/gionkunz/chartist-js/blob/develop/CODINGSTYLE.md" target="_blank" rel="external">https://github.com/gionkunz/chartist-js/blob/develop/CODINGSTYLE.md</a></li>
+<li><strong><em>Isobar Front-end Code Standards</em></strong> by <strong>Isobar</strong> on <code>2015/8/25</code>: <a href="http://isobar-idev.github.io/code-standards/" target="_blank" rel="external">http://isobar-idev.github.io/code-standards/</a></li>
+<li><strong><em>[译文] Isobar 前端代码规范 及 最佳实践</em></strong> by <strong>老码农</strong> on <code>2015/8/25</code>: <a href="http://coderlmn.github.io/code-standards/" target="_blank" rel="external">http://coderlmn.github.io/code-standards/</a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[让 Hexo 自动生成 Tag Cloud 标签云页面]]></title>
-      <url>http://guozhivip.github.io/2016/12/27/hexo-tag-cloud/</url>
+      <url>http://guozhivip.github.io/2015/10/25/hexo-tag-cloud/</url>
       <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>参看上篇 <a href="/2015/10/16/hexo-404-page/">创建404页面</a> 的文章，我们可以轻易地创建一个链接为 <code>http://&quot;主页&quot;/tags/</code> 的页面，然后编辑对应 .md 文件设置样式。在此基础上，我们还需要在主题 layout 布局中添加代码，引入辅助函数，才能自动生成所需的标签云页面。下面简单介绍下实现过程。<p></p>
 <a id="more"></a>
 <p><img src="/resources/tag-cloud.png" alt="tag-cloud"></p>
@@ -16,7 +719,7 @@
 <h2 id="插入标签云"><a href="#插入标签云" class="headerlink" title="插入标签云"></a>插入标签云</h2><p>使用 Hexo 辅助函数 <code>&lt;%- tagcloud([tags], [options]) %&gt;</code> 插入标签云，参数详解请查看 <a href="https://hexo.io/zh-cn/docs/helpers.html#tagcloud" title="tagcloud: 插入标签云" target="_blank" rel="external">官方文档</a>。</p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;%- tagcloud(&#123;</div><div class="line">    min_font: <span class="number">16</span>, </div><div class="line">    max_font: <span class="number">35</span>, </div><div class="line">    amount: <span class="number">999</span>, </div><div class="line">    color: <span class="literal">true</span>, </div><div class="line">    start_color: <span class="string">'gray'</span>, </div><div class="line">    end_color: <span class="string">'black'</span>,</div><div class="line">&#125;) %&gt;</div></pre></td></tr></table></figure>
 <h2 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h2><p>审查元素，按需修改相关样式。下面是目前本博客 <a href="/tags">标签云页面</a> 所添加的代码，附上供参考。</p>
-<figure class="highlight erb"><figcaption><span>/layout/_partial/article.ejs</span><a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3a82bb65b325826b3f71cae10e39e5314ccb63cb" target="_blank" rel="external">tag cloud page</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line">&lt;% if (page.path === "tags/index.html")&#123; %&gt;</div><div class="line">    &lt;hr&gt;</div><div class="line">    &lt;br&gt;</div><div class="line">    &lt;%- list_categories(&#123;</div><div class="line">        depth: 1,</div><div class="line">    &#125;) %&gt;</div><div class="line">    &lt;div class="tags"&gt;</div><div class="line">        &lt;%- tagcloud(&#123;</div><div class="line">            min_font: 16, </div><div class="line">            max_font: 35, </div><div class="line">            amount: 999, </div><div class="line">            color: true, </div><div class="line">            start_color: 'gray', </div><div class="line">            end_color: 'black',</div><div class="line">        &#125;) %&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">        .category-list li&#123;</div><div class="line">            display: inline-block;</div><div class="line">            margin: 0 1em .5em 0;</div><div class="line">            padding: 4px;</div><div class="line">            border: 1px solid lightgray;</div><div class="line">            font-size: 1.2em;</div><div class="line">        &#125;</div><div class="line">        .category-list a &#123;</div><div class="line">            color: gray;</div><div class="line">        &#125;</div><div class="line">        .category-list-item:hover a &#123;</div><div class="line">            color: gray;</div><div class="line">            text-decoration: none;</div><div class="line">            font-weight: bold;</div><div class="line">        &#125;</div><div class="line">        .category-list-count &#123;</div><div class="line">            margin-left: 2px;</div><div class="line">            font-size: .9em;</div><div class="line">        &#125;</div><div class="line">        .article-entry ul li:before&#123;</div><div class="line">            display: none;</div><div class="line">        &#125;</div><div class="line">        .article-inner  &#123;</div><div class="line">            text-align: center;</div><div class="line">        &#125;</div><div class="line">        .tags &#123;</div><div class="line">            max-width: 40em;</div><div class="line">            margin: 2em auto;</div><div class="line">            margin-top: 0em;</div><div class="line">        &#125;</div><div class="line">        .tags a &#123;</div><div class="line">            margin-right: 1em;</div><div class="line">            border-bottom: 1px solid gray;</div><div class="line">            line-height: 65px;</div><div class="line">            white-space: nowrap;</div><div class="line">        &#125;</div><div class="line">        .tags a:hover &#123;</div><div class="line">            border-bottom: 2px solid black;</div><div class="line">            font-style: italic;</div><div class="line">            text-decoration: none;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight erb"><figcaption><span>/layout/_partial/article.ejs</span><a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3a82bb65b325826b3f71cae10e39e5314ccb63cb" target="_blank" rel="external">tag cloud page</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span> if (page.path === "tags/index.html")&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%-</span></span> list_categories(&#123;</div><div class="line">        depth: 1,</div><div class="line">    &#125;) <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tags"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">%-</span></span> tagcloud(&#123;</div><div class="line">            min_font: 16, </div><div class="line">            max_font: 35, </div><div class="line">            amount: 999, </div><div class="line">            color: true, </div><div class="line">            start_color: 'gray', </div><div class="line">            end_color: 'black',</div><div class="line">        &#125;) <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">        <span class="selector-class">.category-list</span> <span class="selector-tag">li</span>&#123;</div><div class="line">            <span class="attribute">display</span>: inline-block;</div><div class="line">            <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">1em</span> .<span class="number">5em</span> <span class="number">0</span>;</div><div class="line">            <span class="attribute">padding</span>: <span class="number">4px</span>;</div><div class="line">            <span class="attribute">border</span>: <span class="number">1px</span> solid lightgray;</div><div class="line">            <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">color</span>: gray;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list-item</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">color</span>: gray;</div><div class="line">            <span class="attribute">text-decoration</span>: none;</div><div class="line">            <span class="attribute">font-weight</span>: bold;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list-count</span> &#123;</div><div class="line">            <span class="attribute">margin-left</span>: <span class="number">2px</span>;</div><div class="line">            <span class="attribute">font-size</span>: .<span class="number">9em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.article-entry</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:before</span>&#123;</div><div class="line">            <span class="attribute">display</span>: none;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.article-inner</span>  &#123;</div><div class="line">            <span class="attribute">text-align</span>: center;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> &#123;</div><div class="line">            <span class="attribute">max-width</span>: <span class="number">40em</span>;</div><div class="line">            <span class="attribute">margin</span>: <span class="number">2em</span> auto;</div><div class="line">            <span class="attribute">margin-top</span>: <span class="number">0em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">margin-right</span>: <span class="number">1em</span>;</div><div class="line">            <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid gray;</div><div class="line">            <span class="attribute">line-height</span>: <span class="number">65px</span>;</div><div class="line">            <span class="attribute">white-space</span>: nowrap;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">            <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid black;</div><div class="line">            <span class="attribute">font-style</span>: italic;</div><div class="line">            <span class="attribute">text-decoration</span>: none;</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>知道怎么在特定页面中引入 Hexo 自带的函数和变量后，大家应该就可以比较自在地在文章中引入需要的内容了，标签列表，文章列表，文章地址，日期时间等都可以。</p>
 </blockquote>
@@ -30,18 +733,70 @@
     </entry>
     
     <entry>
-      <title><![CDATA[每日一记录]]></title>
-      <url>http://guozhivip.github.io/2016/12/25/hexo-tag-cloud/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+      <title><![CDATA[在 Hexo 中创建匹配主题的404页面]]></title>
+      <url>http://guozhivip.github.io/2015/10/16/hexo-404-page/</url>
+      <content type="html"><![CDATA[<p>　　通常，对于绑定了顶级域名的 Hexo 博客来说，只需在所用主题的<code>source</code>文件夹下新建一个<code>404.html</code>文件，再生成部署到云端，即可生成博客404页面。但这种方法生成的页面是孤立的，下面介绍一种生成匹配主题的404页面的方法。</p>
 <a id="more"></a>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p><img src="/resources/404-page.jpg" alt="404-page"></p>
+<h3 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h3><blockquote>
+<ol>
+<li>启动 Git Bash，进入 Hexo 所在文件夹，输入 <code>hexo new page 404</code> ;</li>
+<li>打开刚新建的页面文件，默认在 Hexo 文件夹根目录下 <code>/source/404/index.md</code>；</li>
+<li>在顶部插入一行，写上<code>permalink: /404</code>，这表示指定该页固定链接为 <code>http://&quot;主页&quot;/404.html</code></li>
+</ol>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="number">404</span> Not Found：该页无法显示</div><div class="line"><span class="attr">toc:</span> <span class="literal">false</span></div><div class="line"><span class="attr">comments:</span> <span class="literal">false</span></div><div class="line"><span class="attr">permalink:</span> /<span class="number">404</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure>
+<h3 id="自定义页面样式"><a href="#自定义页面样式" class="headerlink" title="自定义页面样式"></a>自定义页面样式</h3><p>　　经过上面的设置后，404界面已生效，其编辑方式与一般文章无异。我们可以在.md文件正文中插入一些 CSS 样式，使得该页面与博客中的一般文章有所区别。下面是我个人为配合本博客主题所设置的一些样式，仅供参考，具体修改自行审查所用主题。</p>
+<blockquote>
+<p><a href="http://moxfive.xyz/举个404页面栗子" target="_blank" rel="external">http://moxfive.xyz/举个404页面栗子</a></p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line">title: 404 Not Found：该页无法显示</div><div class="line">toc: false</div><div class="line">comments: false</div><div class="line">permalink: /404</div><div class="line">---</div><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line">	<span class="selector-class">.article-header</span> &#123;</div><div class="line">		<span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">		<span class="attribute">padding-top</span>: <span class="number">26px</span>;</div><div class="line">		<span class="attribute">border-left</span>: none;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-header</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">		<span class="attribute">border-left</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-title</span> &#123;</div><div class="line">		<span class="attribute">font-size</span>: <span class="number">2.1em</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-tag">strong</span> <span class="selector-tag">a</span> &#123;</div><div class="line">		<span class="attribute">color</span>: <span class="number">#747474</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-meta</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.share</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.ds-meta</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.player</span> &#123;</div><div class="line">		<span class="attribute">margin-left</span>: -<span class="number">10px</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.sign</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: right;</div><div class="line">		<span class="attribute">font-style</span>: italic;</div><div class="line">	&#125;</div><div class="line">  	<span class="selector-id">#page-visit</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.center</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">		<span class="attribute">height</span>: <span class="number">2.5em</span>;</div><div class="line">		<span class="attribute">font-weight</span>: bold;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-entry</span> <span class="selector-tag">hr</span> &#123;</div><div class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.pic</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.pic</span> <span class="selector-tag">br</span> &#123;</div><div class="line">  		<span class="attribute">display</span>: none;</div><div class="line">  	&#125;</div><div class="line">	<span class="selector-id">#container</span> <span class="selector-class">.article-info-post</span><span class="selector-class">.article-info</span> &#123;</div><div class="line">  	<span class="attribute">display</span>: none;</div><div class="line">  	&#125;</div><div class="line">	<span class="selector-id">#container</span> <span class="selector-class">.article</span> <span class="selector-class">.article-title</span> &#123;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><strong><em>Custom 404 Pages</em></strong> by <strong>GitHub Help</strong> on <code>2015</code>: <a href="https://help.github.com/articles/custom-404-pages/" target="_blank" rel="external">https://help.github.com/articles/custom-404-pages/</a> </li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[EndNote 与 Markdown 结合 — 为网文快速添加 Reference]]></title>
+      <url>http://guozhivip.github.io/2015/08/30/EndNote-Markdown/</url>
+      <content type="html"><![CDATA[<p>　　最近正在学习用 Markdown 写文章，网上搜了一圈，没找到称心的插入参考资料列表 Reference 的方法。想起自己一直在用 EndNote 管理文献，索性网络博文的文献也用 EndNote 管理好了。</p>
+<p>　　参考 Markdown 的语法，修改了 EndNote 文献的导出格式，生成的列表较简洁，样式自定义，排序和维护都比较方便，基本满足了自己的要求。</p>
+<p>　　下面是实现过程，稍作记录供参考，具体细节样式取决于 Markdown 样式配置。<br><a id="more"></a></p>
+<p><strong>相关程序: </strong></p>
+<ul>
+<li>EndNote X7 </li>
+<li>Windows 10</li>
+<li>马克飞象 &amp; Mou</li>
+</ul>
+<hr>
+<h3 id="导入与配置"><a href="#导入与配置" class="headerlink" title="导入与配置"></a>导入与配置</h3><ol>
+<li>配置文件下载：→ <a href="/resources/EndNote-MOxFIVE.zip">EndNote-MOxFIVE.zip</a><br><img src="/resources/EndNote-files.jpg" alt="EndNote-files"></li>
+<li>如下图获取 Style Folder 路径然后在资源管理器里打开 → 把下载解压得到的两个 ens 格式拷入其中;<br><img src="/resources/EndNote-Style.gif" alt="EndNote-Style"></li>
+<li>如下图打开样式管理器，找到并勾选新添加的两种样式；<br><img src="/resources/EndNote-add.gif" alt="EndNote-add"></li>
+<li>打开 EndNote → Preferences → 导入下载的 Reference Type.xml → 默认 type 选择“1.web” → 点确定退出；<br><img src="/resources/Reference-Type.gif" alt="Reference-Type"> </li>
+</ol>
+<h3 id="生成列表"><a href="#生成列表" class="headerlink" title="生成列表"></a>生成列表</h3><ol>
+<li>如下图，下拉列表切换为 Markdown List 样式，点新建文献按钮，填入作者、标题、日期和链接后保存；<br><img src="/resources/EndNote-item.jpg" alt="EndNote-item"></li>
+<li><p>选取添加好的文献，右键选 Copy Formatted，在 Markdown 正文末尾加一个标题，把列表粘贴其下；</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 参考资料:</span></div><div class="line"><span class="bullet">1. </span><span class="strong">***认识与入门 Markdown**</span><span class="bullet">* by *</span><span class="emphasis">*Te_Lee*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2014/04/17<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">sspai.com</span>/<span class="attr">25137</span>&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***Markdown 语法说明**</span><span class="bullet">* by *</span><span class="emphasis">*riku*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2012<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">wowubuntu.com</span>/<span class="attr">markdown</span>/&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***使用 GitHub 和 Hexo 搭建免费静态 Blog**</span><span class="bullet">* by *</span><span class="emphasis">*wsgzao*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2015/03/23<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">www.v2ex.com</span>/<span class="attr">t</span>/<span class="attr">178642</span>&gt;</span></span> </div><div class="line">~~~~~~~~~</div><div class="line"><span class="section">##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; </span></div><div class="line"><span class="bullet">1. </span><span class="strong">**GitHub**</span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">github.com</span>/<span class="attr">MOxFIVE</span>&gt;</span></span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h3><ol>
+<li><strong>GitHub</strong>: <a href="https://github.com/MOxFIVE" target="_blank" rel="external">https://github.com/MOxFIVE</a> </li>
+<li><strong><em>认识与入门 Markdown</em></strong> by <strong>Te_Lee</strong> on <code>2014/04/17</code>: <a href="http://sspai.com/25137" target="_blank" rel="external">http://sspai.com/25137</a> </li>
+<li><strong><em>Markdown 语法说明</em></strong> by <strong>riku</strong> on <code>2012</code>: <a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">http://wowubuntu.com/markdown/</a> </li>
+<li><strong><em>使用 GitHub 和 Hexo 搭建免费静态 Blog</em></strong> by <strong>wsgzao</strong> on <code>2015/03/23</code>: <a href="https://www.v2ex.com/t/178642" target="_blank" rel="external">https://www.v2ex.com/t/178642</a> </li>
+<li>更长预览请参看本人另一篇日志的 <a href="/2015/08/20/blog-building/#参考资料:">参考资料列表</a>。</li>
+</ol>
+<h3 id="一些取舍"><a href="#一些取舍" class="headerlink" title="一些取舍"></a>一些取舍</h3><ul>
+<li>EndNote 里的样式配置尽量使用 Markdown 语法编写，保证对各个 Markdown 编辑器的兼容性；</li>
+<li><code>&lt;code&gt;2012&lt;/code&gt;</code>日期这里不用 Markdown 写法，因为有关符号 ` 在 EndNote 中被用于引入变量；  </li>
+<li>显示完整网址，便于识别来源；</li>
+<li><code>1.</code>的列表写法主要为了便于批量生成以及自由排序，只是某些编辑器可能不兼容这个写法；</li>
+<li>原本标题想用书名号《》包起来，但感觉不少内容不应该用书名号，最后还是使用斜体表示标题；</li>
+<li>上面预览样式是按我个人喜好配的，需要调整的话可自行琢磨参数修改模板。<br><img src="/resources/EndNote-templates.gif" alt="EndNote-templates"></li>
+</ul>
 ]]></content>
     </entry>
     
@@ -49,21 +804,9 @@
   
     
     <entry>
-      <title><![CDATA[404]]></title>
-      <url>http://guozhivip.github.io/404/index.html</url>
-      <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
-<h2 id="permalink-404"><a href="#permalink-404" class="headerlink" title="permalink: /404"></a>permalink: /404</h2>]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
+      <title><![CDATA[about]]></title>
       <url>http://guozhivip.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<p>title: about me<br>date: 2016-12-18<br>tags:</p>
-<ul>
-<li>about<br>permalink: </li>
-</ul>
-<hr>
-<p>　　一个伪文艺青年。</p>
+      <content type="html"><![CDATA[<p>一个伪文艺青年。</p>
 <a id="more"></a>
 <div align="center"><img src="https://guozhivip.github.io/img/avatar.png" alt="果汁教育创始人" height="565px" width="565px" style="margin-top: 15px"></div>
 
@@ -77,6 +820,13 @@
 <li><a href="http://guozhivip.com/myblog/myblog.html" target="_blank" rel="external">果汁教育创始人</a></li>
 </ul>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[404]]></title>
+      <url>http://guozhivip.github.io/404/index.html</url>
+      <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
+<h2 id="permalink-404"><a href="#permalink-404" class="headerlink" title="permalink: /404"></a>permalink: /404</h2>]]></content>
     </entry>
     
     <entry>
