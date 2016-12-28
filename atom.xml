@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://guozhivip.github.io/"/>
-  <updated>2016-07-25T07:05:40.000Z</updated>
+  <updated>2016-12-28T04:09:55.255Z</updated>
   <id>http://guozhivip.github.io/</id>
   
   <author>
@@ -16,71 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于 Yelee 主题背景图的压缩与优化</title>
-    <link href="http://guozhivip.github.io/2016/05/17/image-compression/"/>
-    <id>http://guozhivip.github.io/2016/05/17/image-compression/</id>
-    <published>2016-05-17T07:59:04.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。</p>
-<a id="more"></a>
-<h2 id="优化说明"><a href="#优化说明" class="headerlink" title="优化说明"></a>优化说明</h2><ul>
-<li>请使用 <code>jpg</code> 后缀名的背景图片；</li>
-<li>如果可以，使用 <code>渐进式JPEG</code>，让图片加载时逐渐清晰；</li>
-<li>将图片品质尽量调低，一般可以压缩到几十kb（背景图半透明显示，因此细节并不重要）；<blockquote>
-<p>下图1 为目前主题自带背景图的分辨率和文件大小展示，图2 为渐进式图片加载示例</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="/resources/image-compression-1.png" alt="Yelee Background info."> <img src="/resources/image-compression-2.gif" alt="Progressive JPEGs"></p>
-<h2 id="优化方案"><a href="#优化方案" class="headerlink" title="优化方案"></a>优化方案</h2><h3 id="PhotoShop"><a href="#PhotoShop" class="headerlink" title="PhotoShop"></a>PhotoShop</h3><ul>
-<li>电脑上如果装有 PhotoShop, 那用其来优化图片真是再好不过了</li>
-<li>PS 打开图片 → 文件 → 存储为 Web 所用格式 → JPEG 格式，品质 0，勾选 <code>连续</code> （渐进式），最后存储，这样一张高压缩渐进式的 JPG 背景图就做好了</li>
-</ul>
-<p><img src="/resources/image-compression-ps.png" alt="image Compression by PhotoShop"></p>
-<h3 id="智图"><a href="#智图" class="headerlink" title="智图"></a>智图</h3><ul>
-<li><a href="http://zhitu.isux.us/" target="_blank" rel="external">智图</a> 是腾讯 ISUX 出品的在线图片优化工具，可以方便的对比优化前后的图片，同时可以自行调节图片品质，除了不能设置 <code>渐进式JPEG</code> , 其他基本满足背景图优化需要</li>
-<li>进入网站后按提示上传图片，再调低图片品质，之后下载图片即可<blockquote>
-<p>因为主题背景图为 <code>jpg</code> 格式，其他格式请转为 <code>jpg</code> 再上传到该网站优化。转换格式方法很多，比如用 Windows 自带的画图打开图片然后另存为 jpg</p>
-</blockquote>
-</li>
-</ul>
-<p><img src="/resources/zhitu.png" alt="智图"></p>
-<h3 id="方案对比"><a href="#方案对比" class="headerlink" title="方案对比"></a>方案对比</h3><ul>
-<li>原图为 420kb，智图选择最低品质(10)后约为 129kb；</li>
-<li>PhotoShop 选择品质 0，可以压缩到 62k，同时可以设为 <code>渐进式JPEG</code>；</li>
-<li>因此，有条件的话更推荐使用 PS 压缩背景图。</li>
-</ul>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
-<li><strong>智图</strong>: <a href="http://zhitu.isux.us/" target="_blank" rel="external">http://zhitu.isux.us/</a></li>
-<li><strong>TinyPNG</strong>: <a href="https://tinypng.com/" target="_blank" rel="external">https://tinypng.com/</a></li>
-<li><strong><em>渐进式 jpeg(progressive jpeg) 图片及其相关</em></strong> by <strong>张鑫旭</strong> on <code>2013/01/07</code>: <a href="http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/</a></li>
-<li><strong>呆毛王示例壁纸下载</strong>: <a href="http://moxfive.xyz/resources/saber.jpg" target="_blank" rel="external">http://moxfive.xyz/resources/saber.jpg</a></li>
-<li><strong>最人性化的壁纸网站</strong>: <a href="http://www.wallpaperpcmobile.com/" target="_blank" rel="external">http://www.wallpaperpcmobile.com/</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="PhotoShop" scheme="http://guozhivip.github.io/tags/PhotoShop/"/>
-    
-      <category term="Yelee" scheme="http://guozhivip.github.io/tags/Yelee/"/>
-    
-  </entry>
-  
-  <entry>
     <title>几个国内专用的公共 DNS</title>
-    <link href="http://guozhivip.github.io/2016/05/11/public-dns/"/>
-    <id>http://guozhivip.github.io/2016/05/11/public-dns/</id>
-    <published>2016-05-11T12:57:08.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/12/11/public-dns/"/>
+    <id>http://guozhivip.github.io/2016/12/11/public-dns/</id>
+    <published>2016-12-11T12:57:08.000Z</published>
+    <updated>2016-12-28T04:09:55.255Z</updated>
     
     <content type="html"><![CDATA[<p>　　之前 <a href="http://www.bootcdn.cn/" target="_blank" rel="external">有个网站</a> 自己经常上不去，查了挺久才发现是 DNS 的问题，更换为公共 DNS 后访问恢复正常。由此可见，挑选一个合适自己网络的 DNS 还是挺有必要的。</p>
 <a id="more"></a>
@@ -127,60 +67,13 @@
   </entry>
   
   <entry>
-    <title>在百度分享中使用 Font Awesome 图标</title>
-    <link href="http://guozhivip.github.io/2016/04/20/baidu-share-fontawesome/"/>
-    <id>http://guozhivip.github.io/2016/04/20/baidu-share-fontawesome/</id>
-    <published>2016-04-20T03:25:10.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <title>CSS 设置文本省略 ellipsis</title>
+    <link href="http://guozhivip.github.io/2016/11/18/text-overflow-ellipsis/"/>
+    <id>http://guozhivip.github.io/2016/11/18/text-overflow-ellipsis/</id>
+    <published>2016-11-18T12:25:35.000Z</published>
+    <updated>2016-12-28T04:09:06.944Z</updated>
     
-    <content type="html"><![CDATA[<p>　　百度分享自带的图标有点简陋，而自己站点的图标基本来自 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>，为了美化和统一风格，对其中的图标进行了替换。</p>
-<a id="more"></a>
-<p></p><p data-height="241" data-theme-id="0" data-slug-hash="ZWROBe" data-default-tab="css,result" data-user="MOxFIVE" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/ZWROBe/" target="_blank" rel="external">Baidu Share with Font Awesome</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
-
-
-<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="载入-Font-Awesome"><a href="#载入-Font-Awesome" class="headerlink" title="载入 Font Awesome"></a>载入 Font Awesome</h3><ul>
-<li>通过 CDN 加载 Font Awesome，一般放在页面头部<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="添加图标-Class"><a href="#添加图标-Class" class="headerlink" title="添加图标 Class"></a>添加图标 Class</h3><ul>
-<li>在官网 <a href="http://fontawesome.io/icons/" target="_blank" rel="external">图标列表</a> 中查询所需代码，添加到百度分享提供的 HTML 代码中</li>
-<li>下面以微博、微信等为例: (<code>fa</code> 这个 class 要保留)</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bdsharebuttonbox"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weibo bds_tsina"</span> <span class="attr">data-cmd</span>=<span class="string">"tsina"</span> <span class="attr">title</span>=<span class="string">"分享到新浪微博"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-qq bds_sqq"</span> <span class="attr">data-cmd</span>=<span class="string">"sqq"</span> <span class="attr">title</span>=<span class="string">"分享给 QQ 好友"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weixin bds_weixin"</span> <span class="attr">data-cmd</span>=<span class="string">"weixin"</span> <span class="attr">title</span>=<span class="string">"生成文章二维码"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-share-alt bds_more"</span> <span class="attr">data-cmd</span>=<span class="string">"more"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="样式修改"><a href="#样式修改" class="headerlink" title="样式修改"></a>样式修改</h2><p>通过 CSS 修改图标的样式，以 微博、微信、QQ 、more(分享到…) 为例，样式已尽可能精简</p>
-<h3 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*部分样式可能会被百度分享自带样式覆盖，因而加上 `!important` 确保生效*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span>, <span class="comment">/*.bds_more 关联较多，需单独设置*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-class">.bds_more</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">50px</span>; <span class="comment">/*设置图标容器宽度*/</span></div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*宽等于高，正方形*/</span></div><div class="line">  <span class="attribute">line-height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*行高等于图标容器高度，垂直居中*/</span></div><div class="line">  <span class="attribute">text-align</span>: center; <span class="comment">/*水平居中*/</span></div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span> <span class="meta">!important</span>; <span class="comment">/*覆盖自带样式，消除内边距*/</span></div><div class="line">  <span class="attribute">font-size</span>: <span class="number">34px</span> <span class="meta">!important</span>; <span class="comment">/*图标大小*/</span></div><div class="line">  <span class="attribute">text-decoration</span>: none; <span class="comment">/*去掉图标下划线*/</span></div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>; <span class="comment">/*图标颜色*/</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="comment">/*鼠标悬停时图标颜色*/</span></div><div class="line"><span class="selector-class">.bds_more</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="图标背景"><a href="#图标背景" class="headerlink" title="图标背景"></a>图标背景</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.bds_tsina</span> &#123; <span class="comment">/*新浪微博图标背景色*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#db332f</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_sqq</span> &#123; <span class="comment">/*QQ*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#1cbcef</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_weixin</span> &#123; <span class="comment">/*微信*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cdc49</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_more</span> &#123; <span class="comment">/*分享到...*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cbcf5</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
-<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
-<li><strong>百度分享</strong>: <a href="http://share.baidu.com/" target="_blank" rel="external">http://share.baidu.com/</a></li>
-<li><strong>百度分享网站ID列表</strong>: <a href="http://share.baidu.com/help/webid" target="_blank" rel="external">http://share.baidu.com/help/webid</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　百度分享自带的图标有点简陋，而自己站点的图标基本来自 &lt;a href=&quot;http://fontawesome.io/&quot;&gt;Font Awesome&lt;/a&gt;，为了美化和统一风格，对其中的图标进行了替换。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
-    
-      <category term="Font-Awesome" scheme="http://guozhivip.github.io/tags/Font-Awesome/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS 设置文本省略 ellipsis (…)</title>
-    <link href="http://guozhivip.github.io/2016/04/18/text-overflow-ellipsis/"/>
-    <id>http://guozhivip.github.io/2016/04/18/text-overflow-ellipsis/</id>
-    <published>2016-04-18T12:25:35.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　在 CSS 中应用 ellipsis 属性，可显示省略符号(…)来代表被修剪的文本。</p>
+    <content type="html"><![CDATA[<p>　　在 CSS 中应用 ellipsis 属性，可显示省略符号来代表被修剪的文本。</p>
 <a id="more"></a>
 <p></p><p data-height="309" data-theme-id="0" data-slug-hash="yOjQKo" data-default-tab="css,result" data-user="MOxFIVE" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/yOjQKo/" target="_blank" rel="external">text-overflow: ellipsis</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
@@ -203,7 +96,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;　　在 CSS 中应用 ellipsis 属性，可显示省略符号(…)来代表被修剪的文本。&lt;/p&gt;
+      &lt;p&gt;　　在 CSS 中应用 ellipsis 属性，可显示省略符号来代表被修剪的文本。&lt;/p&gt;
     
     </summary>
     
@@ -218,10 +111,10 @@
   
   <entry>
     <title>Markdown 表格样式调整与自适应优化</title>
-    <link href="http://guozhivip.github.io/2016/03/04/markdown-table-style/"/>
-    <id>http://guozhivip.github.io/2016/03/04/markdown-table-style/</id>
-    <published>2016-03-04T12:39:17.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/11/04/markdown-table-style/"/>
+    <id>http://guozhivip.github.io/2016/11/04/markdown-table-style/</id>
+    <published>2016-11-04T12:39:17.000Z</published>
+    <updated>2016-12-28T04:08:32.945Z</updated>
     
     <content type="html"><![CDATA[<p>　　Markdown 写的表格最终会被解析成 HTML 代码，如果使用的编辑器支持自定义 CSS，就能方便的调整样式。如果可以引入 JavaScript，样式自适应也能较好地实现。</p>
 <a id="more"></a>
@@ -279,215 +172,22 @@
       <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
     
     
+      <category term="Markdown" scheme="http://guozhivip.github.io/tags/Markdown/"/>
+    
       <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
     
       <category term="JavaScript" scheme="http://guozhivip.github.io/tags/JavaScript/"/>
-    
-      <category term="Markdown" scheme="http://guozhivip.github.io/tags/Markdown/"/>
     
       <category term="Table" scheme="http://guozhivip.github.io/tags/Table/"/>
     
   </entry>
   
   <entry>
-    <title>关联 GitHub, 让 Hexo 支持查看文章更新历史</title>
-    <link href="http://guozhivip.github.io/2016/01/10/hexo-post-version-control/"/>
-    <id>http://guozhivip.github.io/2016/01/10/hexo-post-version-control/</id>
-    <published>2016-01-10T14:38:01.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。<p></p>
-<a id="more"></a>
-<p><img src="/resources/version-control.png" alt="version-control"></p>
-<h2 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h2><h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><ul>
-<li>为了便于文章识别和自动关联文件，文章 Markdown 的文件名应该符合规范。</li>
-<li>建议使用 文章建立日期.固定链接 <code>YY-MM-DD.permalink.md</code> 的形式。</li>
-<li>在文章 [Front-matter] 中设置固定链接 permalink，然后填写文件名，例如本文完整文件名为 <code>2016-01-10.hexo-post-version-control.md</code></li>
-<li>为什么不使用文章标题作为文件名:<blockquote>
-<p>一是因为标题偶尔会变动，修改相对麻烦；二是标题可能包含不能用作文件名的符号，导致关联出错。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="文件备份"><a href="#文件备份" class="headerlink" title="文件备份"></a>文件备份</h3><ul>
-<li>把 <code>hexo/sources/_posts</code> 文件夹同步备份到你的 GitHub 上，不熟悉 Git 的可使用 GitHub Desktop 操作，具体方法自行搜索。</li>
-</ul>
-<h2 id="代码添加"><a href="#代码添加" class="headerlink" title="代码添加"></a>代码添加</h2><p>把下面 EJS 代码添加到主题文章模板合适位置中，<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题是添加在文末版权区中。参考备份文件在 Github 的链接修改前半部分地址。</p>
-<figure class="highlight erb"><figcaption><span>yelee/layout/_partial/post/nav.ejs</span><a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">Post Version Control</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
-<h2 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h2><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="comment">&lt;!-- 不设置 backup: false 则默认显示 --&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span> </div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 不同功能替换前面超链接即可，文件名不变 --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 文件名生成: &lt;%=</span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="comment">%&gt;.&lt;%=</span></span> post.slug <span class="xml"><span class="comment">%&gt; --&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
-<h3 id="Blame"><a href="#Blame" class="headerlink" title="Blame"></a>Blame</h3><ul>
-<li>顺序列出文章内容，左侧显示各部分 commit 信息，最后修改时间等。<br><img src="/resources/Blame.png" alt="Blame"></li>
-</ul>
-<h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><ul>
-<li>列出与该文件相关的更新记录 (commit)，按路径匹配。我一般直接就用提交时间作为 commit 信息了，想要更直观查看变动的可以在提交时书写更完善的 commit 信息。</li>
-</ul>
-<p><img src="/resources/History.png" alt="History"></p>
-<h3 id="md-Raw"><a href="#md-Raw" class="headerlink" title=".md Raw"></a>.md Raw</h3><ul>
-<li>在线查看或者直接下载文章原始 Markdown 文本。<br><img src="/resources/Raw.png" alt="Raw"></li>
-</ul>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
-<ul>
-<li>这是半自动的版本控制，需要手动把文章同步备份到 GitHub；</li>
-<li>代码部分的变动基于 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题，其它主题用户可以参考 <a href="/2015/10/25/hexo-tag-cloud/">另一篇文章</a> 的方法，自行添加代码到合适位置；</li>
-<li>小图标来自 Font Awesome，需主题支持才会正常显示；</li>
-<li>本文不详解 Hexo 基础知识，有设置项不理解的请先阅读 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo 官方帮助文档</a>。</li>
-</ul>
-</blockquote>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
-<li><strong>GitHub Desktop</strong>: <a href="https://desktop.github.com/" target="_blank" rel="external">https://desktop.github.com/</a></li>
-<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
-<li><strong>Hexo 使用文档</strong>: <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></li>
-<li><strong><em>Hexo 文章版本控制</em></strong>  by <strong>MOxFIVE</strong> on <code>2016/01/10</code>: <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 &lt;a href=&quot;https://github.com/MOxFIVE/Markdown-Archives-Backup&quot;&gt;GitHub&lt;/a&gt; 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
-    
-      <category term="GitHub" scheme="http://guozhivip.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为 Hexo 主题添加评论模块 — Disqus, 多说, 友言</title>
-    <link href="http://guozhivip.github.io/2016/01/02/hexo-comments/"/>
-    <id>http://guozhivip.github.io/2016/01/02/hexo-comments/</id>
-    <published>2016-01-01T17:26:48.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>目前自己的主题 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。<p></p>
-<a id="more"></a>
-<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><p>参考以下文件结构把复制的代码和下载的文件放到合适的位置，必要时自行修改文件引用位置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">yelee/_config.yml</div><div class="line">-----/layout/_partial/article.ejs</div><div class="line">---------------------/comments/disqus.ejs</div><div class="line">------------------------------/duoshuo.ejs</div><div class="line">------------------------------/youyan.ejs</div></pre></td></tr></table></figure>
-<h3 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h3><blockquote>
-<p><a href="/resources/Hexo评论模块.zip">Hexo 评论模块（Disqus, 多说, 友言）.zip</a> by MOxFIVE</p>
-</blockquote>
-<h2 id="关联模块"><a href="#关联模块" class="headerlink" title="关联模块"></a>关联模块</h2><p>在合适位置添加以下代码，以便引入评论模块代码。代码使用我比较熟悉的 EJS 书写，使用 Swig, Jade 等其他模板的，请自行转换。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt;</div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<h3 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;!--<span class="comment">//如果不是首页且没使用 `comments: false` 关闭评论，则尝试加载评论 --&gt;</span></div><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中启用多说时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt; </div><div class="line">      &lt;!--<span class="comment">//导入duoshuo.ejs时，同时指定其中几个变量的内容。 --&gt;</span></div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用友言时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用 Disqus 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//以上皆关闭且 Hexo 配置中设置了 disqus_shortname 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;!--<span class="comment">//文件分离和变量的使用，使代码能较好的兼容 Hexo 主配置 --&gt;</span></div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<h3 id="新评论系统添加"><a href="#新评论系统添加" class="headerlink" title="新评论系统添加"></a>新评论系统添加</h3><ul>
-<li>如果你想使用畅言或者其他社会化评论系统，并能灵活切换，请参考上文，新加一个 else if 判断引入服务商提供的代码，同时参考后文的配置添加新的设置项。</li>
-</ul>
-<h2 id="配置更新"><a href="#配置更新" class="headerlink" title="配置更新"></a>配置更新</h2><p>在主题中添加以下设置项进行评论功能的配置。评论设置为二级选项，因为之前不少人设置了 <code>duoshuo: true</code> ，结果都进群聊了。要启用某一个评论系统，只需去掉 on 前的 “#”，同时按照说明设置好对应个人账号信息即可。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># &gt;&gt;&gt; Conments 评论系统 &lt;&lt;&lt;</span></div><div class="line"><span class="comment"># Chose ONE as your comment system and keep others disable.</span></div><div class="line"><span class="comment"># 选一个作为网站评论系统，其他保持禁用。</span></div><div class="line"></div><div class="line"><span class="attr">disqus:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  shortname:</span> </div><div class="line">  <span class="comment"># https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-</span></div><div class="line">  <span class="comment"># It is unnecessary to enable disqus here if </span></div><div class="line">  <span class="comment"># you have set "disqus_shortname" in your site's "_config.yml" </span></div><div class="line"></div><div class="line"><span class="attr">duoshuo:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  domain:</span> </div><div class="line">  <span class="comment"># 是否开启多说评论，http://duoshuo.com/create-site/</span></div><div class="line">  <span class="comment"># 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分</span></div><div class="line">  <span class="comment"># http://&lt;要填的部分&gt;.duoshuo.com (domain只填上&lt;&gt;里的内容，不要填整个网址)</span></div><div class="line"></div><div class="line"><span class="attr">youyan:</span></div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  id:</span> </div><div class="line">  <span class="comment"># 是否开启友言评论，http://www.uyan.cc/index.php</span></div><div class="line">  <span class="comment"># id 中填写你的友言用户数字ID，注册后进入后台管理即可查看</span></div><div class="line">  <span class="comment"># 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。</span></div><div class="line"></div><div class="line"><span class="comment"># &gt;&gt;&gt; &lt;&lt;&lt;</span></div></pre></td></tr></table></figure>
-<h2 id="模块代码"><a href="#模块代码" class="headerlink" title="模块代码"></a>模块代码</h2><p>模块代码已附在下载文件中，在此同时列出备用。依旧是使用 EJS 编写，引入一些信息，设置了几个变量，使用其他模板引擎请自行转换。所有评论模块都设置了 <code>id=&quot;comments&quot;</code>，以便有需要时通过锚点定位跳转到评论区。</p>
-<h3 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus_thread"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="comment">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */</span></div><div class="line">    <span class="keyword">var</span> disqus_shortname = <span class="string">'&lt;%= shortname%&gt;'</span>; <span class="comment">// required: replace example with your forum shortname</span></div><div class="line"></div><div class="line">    <span class="comment">/* * * DON'T EDIT BELOW THIS LINE * * */</span></div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">var</span> dsq = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>); dsq.type = <span class="string">'text/javascript'</span>; dsq.async = <span class="literal">true</span>;</div><div class="line">      dsq.src = <span class="string">'//'</span> + disqus_shortname + <span class="string">'.disqus.com/embed.js'</span>;</div><div class="line">      (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(dsq);</div><div class="line">    &#125;)();</div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">noscript</span>&gt;</span>Please enable JavaScript to view the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://disqus.com/?ref_noscript"</span>&gt;</span>comments powered by Disqus.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"duoshuo"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 start --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ds-thread"</span> <span class="attr">data-thread-key</span>=<span class="string">"&lt;%= key%&gt;"</span> <span class="attr">data-title</span>=<span class="string">"&lt;%= title%&gt;"</span> <span class="attr">data-url</span>=<span class="string">"&lt;%= url%&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 end --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> duoshuoQuery = &#123;<span class="attr">short_name</span>:<span class="string">"&lt;%= theme.duoshuo.domain%&gt;"</span>&#125;;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">        ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">        ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">        (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </div><div class="line">         || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="友言评论"><a href="#友言评论" class="headerlink" title="友言评论"></a>友言评论</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"youyan"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"uyan_frame"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://v2.uyan.cc/code/uyan.js?uid=&lt;%=</span></span> theme.youyan.id<span class="xml"><span class="tag"><span class="string">%&gt;"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
-<li><strong>多说评论</strong>: <a href="http://duoshuo.com/" target="_blank" rel="external">http://duoshuo.com/</a></li>
-<li><strong>友言评论</strong>: <a href="http://www.uyan.cc/" target="_blank" rel="external">http://www.uyan.cc/</a></li>
-<li><strong>Disqus</strong>: <a href="https://disqus.com/" target="_blank" rel="external">https://disqus.com/</a></li>
-<li><strong><em>refactor: comments code &amp; configuration 评论模块优化</em></strong> by <strong>MOxFIVE</strong> on <code>2016/01/01</code>: <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;目前自己的主题 &lt;a href=&quot;https://github.com/MOxFIVE/hexo-theme-yelee&quot;&gt;Yelee&lt;/a&gt; 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 最常用的几个命令</title>
-    <link href="http://guozhivip.github.io/2015/12/21/common-hexo-commands/"/>
-    <id>http://guozhivip.github.io/2015/12/21/common-hexo-commands/</id>
-    <published>2015-12-21T14:12:04.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<style>
-    .article-entry h2 {
-        border-bottom: none;
-    }
-</style>
-
-<p>　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: </p>
-<a id="more"></a>
-<h2 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
-<p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<ul>
-<li><code>hexo s</code> 是 <code>hexo server</code> 的缩写，命令效果一致；</li>
-<li>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li>
-<li>对 Hexo 根目录 <code>_config.yml</code> 的修改，需要重启本地服务器后才能预览效果。</li>
-</ul>
-<h2 id="hexo-n"><a href="#hexo-n" class="headerlink" title="hexo n"></a>hexo n</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n &quot;学习笔记  六&quot;</div></pre></td></tr></table></figure>
-<p>新建一篇标题为 <code>学习笔记  六</code> 的文章，因为标题里有空格，所以加上了引号。</p>
-<ul>
-<li>文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；</li>
-<li><code>hexo n</code> 是 <code>hexo new</code> 的缩写，命令效果一致。</li>
-</ul>
-<h2 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
-<p>自动生成网站静态文件，并部署到设定的仓库。</p>
-<ul>
-<li><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写，命令效果一致。</li>
-</ul>
-<h2 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
-<p>清除缓存文件 <code>db.json</code> 和已生成的静态文件 <code>public</code>。</p>
-<ul>
-<li>网站显示异常时可以执行这条命令试试。</li>
-</ul>
-<h2 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
-<p>生成网站静态文件到默认设置的 <code>public</code> 文件夹。</p>
-<ul>
-<li>便于查看网站生成的静态文件或者手动部署网站；</li>
-<li>如果使用自动部署，不需要先执行该命令；</li>
-<li><code>hexo g</code> 是 <code>hexo generate</code> 的缩写，命令效果一致。</li>
-</ul>
-<h2 id="hexo-n-page"><a href="#hexo-n-page" class="headerlink" title="hexo n page"></a>hexo n page</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n page aboutme</div></pre></td></tr></table></figure>
-<p>新建一个标题为 <code>aboutme</code> 的页面，默认链接地址为 <code>主页地址/aboutme/</code></p>
-<ul>
-<li>标题可以为中文，但一般习惯用英文；</li>
-<li>页面标题和文章一样可以随意修改；</li>
-<li>页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</li>
-</ul>
-<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean &amp;&amp; hexo s</div><div class="line">hexo clean &amp;&amp; hexo d</div></pre></td></tr></table></figure>
-<p>可以用输入法等软件为这些命令设置快捷键，方便调用。</p>
-<h2 id="相关说明"><a href="#相关说明" class="headerlink" title="相关说明"></a>相关说明</h2><ul>
-<li>以上命令使用基于 Hexo 3.1.1 版本；</li>
-<li>需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 <code>source</code> 文件夹，删除对应文件或文件夹即可；</li>
-<li>更多命令用法请查询 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">官方文档</a>。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;style&gt;
-    .article-entry h2 {
-        border-bottom: none;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Sublime Text 3 使用配置与插件安装</title>
-    <link href="http://guozhivip.github.io/2015/11/30/sublime-config/"/>
-    <id>http://guozhivip.github.io/2015/11/30/sublime-config/</id>
-    <published>2015-11-30T13:07:38.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/10/30/sublime-config/"/>
+    <id>http://guozhivip.github.io/2016/10/30/sublime-config/</id>
+    <published>2016-10-30T13:07:38.000Z</published>
+    <updated>2016-12-28T04:05:32.019Z</updated>
     
     <content type="html"><![CDATA[<p>　　记录安装配置 Sublime 的过程，同时列出所用到的插件，方便自己在新系统新电脑上快速用上熟悉的 Sublime。 </p>
 <a id="more"></a>
@@ -593,56 +293,11 @@
   </entry>
   
   <entry>
-    <title>Anki 自用卡片模板分享</title>
-    <link href="http://guozhivip.github.io/2015/11/23/anki-templates/"/>
-    <id>http://guozhivip.github.io/2015/11/23/anki-templates/</id>
-    <published>2015-11-23T12:34:38.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2><a href="http://ankisrs.net/" target="_blank" rel="external">Anki</a> 是一款卡片式的记忆辅助软件。软件在保持轻巧简洁的同时，各种设置也很丰富。另外， Anki 通过嵌入式的网页来展示卡片，大大增强了卡片样式的自定义功能。下面是目前自己常用的卡片样式代码，有折腾闲情的可以试试。<p></p>
-<a id="more"></a>
-<h2 id="基础模板"><a href="#基础模板" class="headerlink" title="基础模板"></a>基础模板</h2><p>标题居中，用不同背景色区分答案类型，设置圆角等样式。<br><img src="/resources/Anki-a1.png" alt="Anki-a1"></p>
-<h3 id="模板使用区域"><a href="#模板使用区域" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
-<li>主要需要填写如图所示4个区域。<br><img src="/resources/Anki-a2.png" alt="Anki-a2"></li>
-</ul>
-<h3 id="正面模板"><a href="#正面模板" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"&#123;&#123;logo&#125;&#125;"</span> <span class="attr">class</span>=<span class="string">"logo"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"font-size:2em"</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.logo</span> &#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">9em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">2em</span> <span class="number">0</span> <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	 <span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	 <span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	 <span class="attribute">text-align</span>: justify;</div><div class="line">	 <span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	 <span class="attribute">border-radius</span>: <span class="number">1.2em</span> .<span class="number">3em</span>;</div><div class="line">	 <span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="背面模板"><a href="#背面模板" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;FrontSide&#125;&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>=<span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="带页脚模板"><a href="#带页脚模板" class="headerlink" title="带页脚模板"></a>带页脚模板</h2><p>加了页脚，左下显示标签分类信息，右下链接到设定的网址。</p>
-<p><img src="/resources/Anki-b1.png" alt="Anki-b1"></p>
-<h3 id="模板使用区域-1"><a href="#模板使用区域-1" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
-<li>主要需要填写如图所示5个区域。</li>
-</ul>
-<p><img src="/resources/Anki-b2.png" alt="Anki-b2"></p>
-<h3 id="正面模板-1"><a href="#正面模板-1" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">title</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">author</span>&gt;</span>M.ZH<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="样式-1"><a href="#样式-1" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">1.2em</span> <span class="number">0.3em</span>;</div><div class="line">	<span class="attribute">padding </span>: <span class="number">0.5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: .<span class="number">5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.front</span> &#123;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.8em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.item_eng</span> &#123;</div><div class="line">	<span class="attribute">padding-top </span>: <span class="number">5%</span>;</div><div class="line">	<span class="attribute">color</span>: orange;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">2em</span>;</div><div class="line"> &#125;</div><div class="line"><span class="selector-class">.tag</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span> &#123;</div><div class="line">	<span class="attribute">color</span>: grey;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.title</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.author</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.link</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">	<span class="attribute">font-style</span>: italic;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="背面模板-1"><a href="#背面模板-1" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>= <span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;image&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123;Link&#125;&#125;"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">link</span>&gt;</span>Reference Site<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">tag</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="字体下载"><a href="#字体下载" class="headerlink" title="字体下载"></a>字体下载</h2><p>测试了不少字体，感觉 <a href="http://www.daimg.com/download.php?open=2&amp;id=12741&amp;uhash=1eb7c629071a1341f83bc53b" target="_blank" rel="external">方正中雅宋_GBK</a> 和这个软件最匹配。当然，大家可以自行修改<code>font-family</code>，换用喜欢的字体。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;&lt;a href=&quot;http://ankisrs.net/&quot;&gt;Anki&lt;/a&gt; 是一款卡片式的记忆辅助软件。软件在保持轻巧简洁的同时，各种设置也很丰富。另外， Anki 通过嵌入式的网页来展示卡片，大大增强了卡片样式的自定义功能。下面是目前自己常用的卡片样式代码，有折腾闲情的可以试试。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="触类旁通" scheme="http://guozhivip.github.io/categories/%E8%A7%A6%E7%B1%BB%E6%97%81%E9%80%9A/"/>
-    
-    
-      <category term="HTML" scheme="http://guozhivip.github.io/tags/HTML/"/>
-    
-      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
-    
-      <category term="Anki" scheme="http://guozhivip.github.io/tags/Anki/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Git 基础命令与相关术语</title>
-    <link href="http://guozhivip.github.io/2015/11/23/git-command/"/>
-    <id>http://guozhivip.github.io/2015/11/23/git-command/</id>
-    <published>2015-11-22T19:01:30.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/10/23/git-command/"/>
+    <id>http://guozhivip.github.io/2016/10/23/git-command/</id>
+    <published>2016-10-22T19:01:30.000Z</published>
+    <updated>2016-12-28T04:05:15.882Z</updated>
     
     <content type="html"><![CDATA[<p>　　笔记基本上整理自网站 <a href="https://try.github.io" target="_blank" rel="external">Try Git</a>，一套很不错的 Git 在线入门教程。</p>
 <a id="more"></a>
@@ -749,11 +404,116 @@
   </entry>
   
   <entry>
+    <title>在百度分享中使用 Font Awesome 图标</title>
+    <link href="http://guozhivip.github.io/2016/10/20/baidu-share-fontawesome/"/>
+    <id>http://guozhivip.github.io/2016/10/20/baidu-share-fontawesome/</id>
+    <published>2016-10-20T03:25:10.000Z</published>
+    <updated>2016-12-28T04:09:32.024Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　百度分享自带的图标有点简陋，而自己站点的图标基本来自 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a>，为了美化和统一风格，对其中的图标进行了替换。</p>
+<a id="more"></a>
+<p></p><p data-height="241" data-theme-id="0" data-slug-hash="ZWROBe" data-default-tab="css,result" data-user="MOxFIVE" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/MOxFIVE/pen/ZWROBe/" target="_blank" rel="external">Baidu Share with Font Awesome</a> by MOxFIVE (<a href="http://codepen.io/MOxFIVE" target="_blank" rel="external">@MOxFIVE</a>) on <a href="http://codepen.io" target="_blank" rel="external">CodePen</a>.</p><p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><h3 id="载入-Font-Awesome"><a href="#载入-Font-Awesome" class="headerlink" title="载入 Font Awesome"></a>载入 Font Awesome</h3><ul>
+<li>通过 CDN 加载 Font Awesome，一般放在页面头部<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="添加图标-Class"><a href="#添加图标-Class" class="headerlink" title="添加图标 Class"></a>添加图标 Class</h3><ul>
+<li>在官网 <a href="http://fontawesome.io/icons/" target="_blank" rel="external">图标列表</a> 中查询所需代码，添加到百度分享提供的 HTML 代码中</li>
+<li>下面以微博、微信等为例: (<code>fa</code> 这个 class 要保留)</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bdsharebuttonbox"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weibo bds_tsina"</span> <span class="attr">data-cmd</span>=<span class="string">"tsina"</span> <span class="attr">title</span>=<span class="string">"分享到新浪微博"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-qq bds_sqq"</span> <span class="attr">data-cmd</span>=<span class="string">"sqq"</span> <span class="attr">title</span>=<span class="string">"分享给 QQ 好友"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-weixin bds_weixin"</span> <span class="attr">data-cmd</span>=<span class="string">"weixin"</span> <span class="attr">title</span>=<span class="string">"生成文章二维码"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"fa fa-share-alt bds_more"</span> <span class="attr">data-cmd</span>=<span class="string">"more"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="样式修改"><a href="#样式修改" class="headerlink" title="样式修改"></a>样式修改</h2><p>通过 CSS 修改图标的样式，以 微博、微信、QQ 、more(分享到…) 为例，样式已尽可能精简</p>
+<h3 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*部分样式可能会被百度分享自带样式覆盖，因而加上 `!important` 确保生效*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span>, <span class="comment">/*.bds_more 关联较多，需单独设置*/</span></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-class">.bds_more</span> &#123;</div><div class="line">  <span class="attribute">width</span>: <span class="number">50px</span>; <span class="comment">/*设置图标容器宽度*/</span></div><div class="line">  <span class="attribute">height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*宽等于高，正方形*/</span></div><div class="line">  <span class="attribute">line-height</span>: <span class="number">50px</span> <span class="meta">!important</span>; <span class="comment">/*行高等于图标容器高度，垂直居中*/</span></div><div class="line">  <span class="attribute">text-align</span>: center; <span class="comment">/*水平居中*/</span></div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span> <span class="meta">!important</span>; <span class="comment">/*覆盖自带样式，消除内边距*/</span></div><div class="line">  <span class="attribute">font-size</span>: <span class="number">34px</span> <span class="meta">!important</span>; <span class="comment">/*图标大小*/</span></div><div class="line">  <span class="attribute">text-decoration</span>: none; <span class="comment">/*去掉图标下划线*/</span></div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>; <span class="comment">/*图标颜色*/</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.bdsharebuttonbox</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>, <span class="comment">/*鼠标悬停时图标颜色*/</span></div><div class="line"><span class="selector-class">.bds_more</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">  <span class="attribute">color</span>: <span class="number">#fff</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="图标背景"><a href="#图标背景" class="headerlink" title="图标背景"></a>图标背景</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.bds_tsina</span> &#123; <span class="comment">/*新浪微博图标背景色*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#db332f</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_sqq</span> &#123; <span class="comment">/*QQ*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#1cbcef</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_weixin</span> &#123; <span class="comment">/*微信*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cdc49</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.bds_more</span> &#123; <span class="comment">/*分享到...*/</span></div><div class="line">  <span class="attribute">background</span>: <span class="number">#8cbcf5</span> <span class="meta">!important</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
+<li><strong>百度分享</strong>: <a href="http://share.baidu.com/" target="_blank" rel="external">http://share.baidu.com/</a></li>
+<li><strong>百度分享网站ID列表</strong>: <a href="http://share.baidu.com/help/webid" target="_blank" rel="external">http://share.baidu.com/help/webid</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　百度分享自带的图标有点简陋，而自己站点的图标基本来自 &lt;a href=&quot;http://fontawesome.io/&quot;&gt;Font Awesome&lt;/a&gt;，为了美化和统一风格，对其中的图标进行了替换。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
+    
+      <category term="Font-Awesome" scheme="http://guozhivip.github.io/tags/Font-Awesome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于主题背景图的压缩与优化</title>
+    <link href="http://guozhivip.github.io/2016/10/17/image-compression/"/>
+    <id>http://guozhivip.github.io/2016/10/17/image-compression/</id>
+    <published>2016-10-17T07:59:04.000Z</published>
+    <updated>2016-12-28T04:10:57.479Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。</p>
+<a id="more"></a>
+<h2 id="优化说明"><a href="#优化说明" class="headerlink" title="优化说明"></a>优化说明</h2><ul>
+<li>请使用 <code>jpg</code> 后缀名的背景图片；</li>
+<li>如果可以，使用 <code>渐进式JPEG</code>，让图片加载时逐渐清晰；</li>
+<li>将图片品质尽量调低，一般可以压缩到几十kb（背景图半透明显示，因此细节并不重要）；<blockquote>
+<p>下图1 为目前主题自带背景图的分辨率和文件大小展示，图2 为渐进式图片加载示例</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/resources/image-compression-1.png" alt="Yelee Background info."> <img src="/resources/image-compression-2.gif" alt="Progressive JPEGs"></p>
+<h2 id="优化方案"><a href="#优化方案" class="headerlink" title="优化方案"></a>优化方案</h2><h3 id="PhotoShop"><a href="#PhotoShop" class="headerlink" title="PhotoShop"></a>PhotoShop</h3><ul>
+<li>电脑上如果装有 PhotoShop, 那用其来优化图片真是再好不过了</li>
+<li>PS 打开图片 → 文件 → 存储为 Web 所用格式 → JPEG 格式，品质 0，勾选 <code>连续</code> （渐进式），最后存储，这样一张高压缩渐进式的 JPG 背景图就做好了</li>
+</ul>
+<p><img src="/resources/image-compression-ps.png" alt="image Compression by PhotoShop"></p>
+<h3 id="智图"><a href="#智图" class="headerlink" title="智图"></a>智图</h3><ul>
+<li><a href="http://zhitu.isux.us/" target="_blank" rel="external">智图</a> 是腾讯 ISUX 出品的在线图片优化工具，可以方便的对比优化前后的图片，同时可以自行调节图片品质，除了不能设置 <code>渐进式JPEG</code> , 其他基本满足背景图优化需要</li>
+<li>进入网站后按提示上传图片，再调低图片品质，之后下载图片即可<blockquote>
+<p>因为主题背景图为 <code>jpg</code> 格式，其他格式请转为 <code>jpg</code> 再上传到该网站优化。转换格式方法很多，比如用 Windows 自带的画图打开图片然后另存为 jpg</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/resources/zhitu.png" alt="智图"></p>
+<h3 id="方案对比"><a href="#方案对比" class="headerlink" title="方案对比"></a>方案对比</h3><ul>
+<li>原图为 420kb，智图选择最低品质(10)后约为 129kb；</li>
+<li>PhotoShop 选择品质 0，可以压缩到 62k，同时可以设为 <code>渐进式JPEG</code>；</li>
+<li>因此，有条件的话更推荐使用 PS 压缩背景图。</li>
+</ul>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>智图</strong>: <a href="http://zhitu.isux.us/" target="_blank" rel="external">http://zhitu.isux.us/</a></li>
+<li><strong>TinyPNG</strong>: <a href="https://tinypng.com/" target="_blank" rel="external">https://tinypng.com/</a></li>
+<li><strong><em>渐进式 jpeg(progressive jpeg) 图片及其相关</em></strong> by <strong>张鑫旭</strong> on <code>2013/01/07</code>: <a href="http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/2013/01/progressive-jpeg-image-and-so-on/</a></li>
+<li><strong>呆毛王示例壁纸下载</strong>: <a href="http://moxfive.xyz/resources/saber.jpg" target="_blank" rel="external">http://moxfive.xyz/resources/saber.jpg</a></li>
+<li><strong>最人性化的壁纸网站</strong>: <a href="http://www.wallpaperpcmobile.com/" target="_blank" rel="external">http://www.wallpaperpcmobile.com/</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　目前主题里可以使用多张随机大图作背景，如果不做好图片压缩和优化，可能会严重影响网站流畅性。下面简单介绍两种比较便捷的优化方案。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="PhotoShop" scheme="http://guozhivip.github.io/tags/PhotoShop/"/>
+    
+  </entry>
+  
+  <entry>
     <title>制作透明背景 PNG 图片和 GIF 动图的几种方法</title>
-    <link href="http://guozhivip.github.io/2015/11/16/png-gif-transparency/"/>
-    <id>http://guozhivip.github.io/2015/11/16/png-gif-transparency/</id>
-    <published>2015-11-16T14:28:00.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/10/16/png-gif-transparency/"/>
+    <id>http://guozhivip.github.io/2016/10/16/png-gif-transparency/</id>
+    <published>2016-10-16T14:28:00.000Z</published>
+    <updated>2016-12-28T04:04:32.921Z</updated>
     
     <content type="html"><![CDATA[<p>　　偶尔需要将图片的背景透明，渐渐掌握了几种较为简便的处理方法。写篇文章记录一下经验，免得自己哪天又忘了。</p>
 <a id="more"></a>
@@ -824,11 +584,169 @@
   </entry>
   
   <entry>
+    <title>关联 GitHub, 让 Hexo 支持查看文章更新历史</title>
+    <link href="http://guozhivip.github.io/2016/10/10/hexo-post-version-control/"/>
+    <id>http://guozhivip.github.io/2016/10/10/hexo-post-version-control/</id>
+    <published>2016-10-10T14:38:01.000Z</published>
+    <updated>2016-12-28T04:08:09.800Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 <a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external">GitHub</a> 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。<p></p>
+<a id="more"></a>
+<p><img src="/resources/version-control.png" alt="version-control"></p>
+<h2 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h2><h3 id="文件命名"><a href="#文件命名" class="headerlink" title="文件命名"></a>文件命名</h3><ul>
+<li>为了便于文章识别和自动关联文件，文章 Markdown 的文件名应该符合规范。</li>
+<li>建议使用 文章建立日期.固定链接 <code>YY-MM-DD.permalink.md</code> 的形式。</li>
+<li>在文章 [Front-matter] 中设置固定链接 permalink，然后填写文件名，例如本文完整文件名为 <code>2016-01-10.hexo-post-version-control.md</code></li>
+<li>为什么不使用文章标题作为文件名:<blockquote>
+<p>一是因为标题偶尔会变动，修改相对麻烦；二是标题可能包含不能用作文件名的符号，导致关联出错。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="文件备份"><a href="#文件备份" class="headerlink" title="文件备份"></a>文件备份</h3><ul>
+<li>把 <code>hexo/sources/_posts</code> 文件夹同步备份到你的 GitHub 上，不熟悉 Git 的可使用 GitHub Desktop 操作，具体方法自行搜索。</li>
+</ul>
+<h2 id="代码添加"><a href="#代码添加" class="headerlink" title="代码添加"></a>代码添加</h2><p>把下面 EJS 代码添加到主题文章模板合适位置中，<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题是添加在文末版权区中。参考备份文件在 Github 的链接修改前半部分地址。</p>
+<figure class="highlight erb"><figcaption><span>yelee/layout/_partial/post/nav.ejs</span><a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">Post Version Control</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h2 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h2><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="comment">&lt;!-- 不设置 backup: false 则默认显示 --&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> if (post.backup != false)&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span> </div><div class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>更新历史:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 不同功能替换前面超链接即可，文件名不变 --&gt;</span></div><div class="line">        <span class="comment">&lt;!-- 文件名生成: &lt;%=</span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="comment">%&gt;.&lt;%=</span></span> post.slug <span class="xml"><span class="comment">%&gt; --&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Blame 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"顺序查看文章各部分修改记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>Blame<span class="tag">&lt;/<span class="name">a</span>&gt;</span>,</span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 History 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看文章有关更新记录"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"raw"</span>&gt;</span>文本模式:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-file-text-o"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></div><div class="line">        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;文章 Raw 地址&gt;/&lt;%=</span></span> post.date.format("YYYY-MM-DD") <span class="xml"><span class="tag"><span class="string">%&gt;.&lt;%=</span></span></span> post.slug <span class="xml"><span class="tag"><span class="string">%&gt;.md"</span> <span class="attr">title</span>=<span class="string">"查看 &amp; 下载文章 Markdown 原始文本"</span> <span class="attr">target</span> = <span class="string">"_blank"</span>&gt;</span> .md Raw<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
+<h3 id="Blame"><a href="#Blame" class="headerlink" title="Blame"></a>Blame</h3><ul>
+<li>顺序列出文章内容，左侧显示各部分 commit 信息，最后修改时间等。<br><img src="/resources/Blame.png" alt="Blame"></li>
+</ul>
+<h3 id="History"><a href="#History" class="headerlink" title="History"></a>History</h3><ul>
+<li>列出与该文件相关的更新记录 (commit)，按路径匹配。我一般直接就用提交时间作为 commit 信息了，想要更直观查看变动的可以在提交时书写更完善的 commit 信息。</li>
+</ul>
+<p><img src="/resources/History.png" alt="History"></p>
+<h3 id="md-Raw"><a href="#md-Raw" class="headerlink" title=".md Raw"></a>.md Raw</h3><ul>
+<li>在线查看或者直接下载文章原始 Markdown 文本。<br><img src="/resources/Raw.png" alt="Raw"></li>
+</ul>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><blockquote>
+<ul>
+<li>这是半自动的版本控制，需要手动把文章同步备份到 GitHub；</li>
+<li>代码部分的变动基于 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">Yelee</a> 主题，其它主题用户可以参考 <a href="/2015/10/25/hexo-tag-cloud/">另一篇文章</a> 的方法，自行添加代码到合适位置；</li>
+<li>小图标来自 Font Awesome，需主题支持才会正常显示；</li>
+<li>本文不详解 Hexo 基础知识，有设置项不理解的请先阅读 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">Hexo 官方帮助文档</a>。</li>
+</ul>
+</blockquote>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>GitHub Desktop</strong>: <a href="https://desktop.github.com/" target="_blank" rel="external">https://desktop.github.com/</a></li>
+<li><strong>Font Awesome</strong>: <a href="http://fontawesome.io/" target="_blank" rel="external">http://fontawesome.io/</a></li>
+<li><strong>Hexo 使用文档</strong>: <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="external">https://hexo.io/zh-cn/docs/</a></li>
+<li><strong><em>Hexo 文章版本控制</em></strong>  by <strong>MOxFIVE</strong> on <code>2016/01/10</code>: <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235" target="_blank" rel="external">https://github.com/MOxFIVE/M-Hexo-Blog/commit/d8a4942dab23920837cc70249c31697d36e49235</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;Hexo 的文章源文件就是一个个 Markdown 文本，自己一直把这些文件备份在 &lt;a href=&quot;https://github.com/MOxFIVE/Markdown-Archives-Backup&quot;&gt;GitHub&lt;/a&gt; 上。渐渐发觉，如果只把 GitHub 当作普通网盘，那真是有点大材小用了。于是稍作折腾，成功地把 GitHub 上的备份关联到主题中。现在，在文章文末版权区，可以很方便地跳转查看文章更新记录、历史版本以及下载源文件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://guozhivip.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为 Hexo 主题添加评论模块 — Disqus, 多说, 友言</title>
+    <link href="http://guozhivip.github.io/2016/10/02/hexo-comments/"/>
+    <id>http://guozhivip.github.io/2016/10/02/hexo-comments/</id>
+    <published>2016-10-01T17:26:48.000Z</published>
+    <updated>2016-12-28T04:07:41.949Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>目前自己的主题 <a href="https://guozhivip.github.io/">Yelee</a> 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。<p></p>
+<a id="more"></a>
+<h2 id="文件结构"><a href="#文件结构" class="headerlink" title="文件结构"></a>文件结构</h2><p>参考以下文件结构把复制的代码和下载的文件放到合适的位置，必要时自行修改文件引用位置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">yelee/_config.yml</div><div class="line">-----/layout/_partial/article.ejs</div><div class="line">---------------------/comments/disqus.ejs</div><div class="line">------------------------------/duoshuo.ejs</div><div class="line">------------------------------/youyan.ejs</div></pre></td></tr></table></figure>
+<h3 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h3><blockquote>
+<p><a href="/resources/Hexo评论模块.zip">Hexo 评论模块（Disqus, 多说, 友言）.zip</a> by MOxFIVE</p>
+</blockquote>
+<h2 id="关联模块"><a href="#关联模块" class="headerlink" title="关联模块"></a>关联模块</h2><p>在合适位置添加以下代码，以便引入评论模块代码。代码使用我比较熟悉的 EJS 书写，使用 Swig, Jade 等其他模板的，请自行转换。</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt;</div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="代码简析"><a href="#代码简析" class="headerlink" title="代码简析"></a>代码简析</h3><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;!--<span class="comment">//如果不是首页且没使用 `comments: false` 关闭评论，则尝试加载评论 --&gt;</span></div><div class="line">&lt;% <span class="keyword">if</span> (!is_home() &amp;&amp; post.comments)&#123; %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中启用多说时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% <span class="keyword">if</span> (theme.duoshuo.on) &#123; %&gt; </div><div class="line">      &lt;!--<span class="comment">//导入duoshuo.ejs时，同时指定其中几个变量的内容。 --&gt;</span></div><div class="line">      &lt;%- partial(<span class="string">'comments/duoshuo'</span>, &#123;</div><div class="line">          key: post.path,</div><div class="line">          title: post.title,</div><div class="line">          url: config.url+url_for(post.path),</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用友言时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.youyan.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/youyan'</span>) %&gt;</div><div class="line">    &lt;!--<span class="comment">//配置中仅启用 Disqus 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (theme.disqus.on) &#123; %&gt;</div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: theme.disqus.shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;!--<span class="comment">//以上皆关闭且 Hexo 配置中设置了 disqus_shortname 时，导入相应代码 --&gt;</span></div><div class="line">    &lt;% &#125; <span class="keyword">else</span> <span class="keyword">if</span> (config.disqus_shortname) &#123; %&gt;</div><div class="line">        &lt;!--<span class="comment">//文件分离和变量的使用，使代码能较好的兼容 Hexo 主配置 --&gt;</span></div><div class="line">        &lt;%- partial(<span class="string">'comments/disqus'</span>, &#123;</div><div class="line">            shortname: config.disqus_shortname</div><div class="line">          &#125;) %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
+<h3 id="新评论系统添加"><a href="#新评论系统添加" class="headerlink" title="新评论系统添加"></a>新评论系统添加</h3><ul>
+<li>如果你想使用畅言或者其他社会化评论系统，并能灵活切换，请参考上文，新加一个 else if 判断引入服务商提供的代码，同时参考后文的配置添加新的设置项。</li>
+</ul>
+<h2 id="配置更新"><a href="#配置更新" class="headerlink" title="配置更新"></a>配置更新</h2><p>在主题中添加以下设置项进行评论功能的配置。评论设置为二级选项，因为之前不少人设置了 <code>duoshuo: true</code> ，结果都进群聊了。要启用某一个评论系统，只需去掉 on 前的 “#”，同时按照说明设置好对应个人账号信息即可。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># &gt;&gt;&gt; Conments 评论系统 &lt;&lt;&lt;</span></div><div class="line"><span class="comment"># Chose ONE as your comment system and keep others disable.</span></div><div class="line"><span class="comment"># 选一个作为网站评论系统，其他保持禁用。</span></div><div class="line"></div><div class="line"><span class="attr">disqus:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  shortname:</span> </div><div class="line">  <span class="comment"># https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-</span></div><div class="line">  <span class="comment"># It is unnecessary to enable disqus here if </span></div><div class="line">  <span class="comment"># you have set "disqus_shortname" in your site's "_config.yml" </span></div><div class="line"></div><div class="line"><span class="attr">duoshuo:</span> </div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  domain:</span> </div><div class="line">  <span class="comment"># 是否开启多说评论，http://duoshuo.com/create-site/</span></div><div class="line">  <span class="comment"># 使用上面网址登陆你的多说，然后创建站点，在 domain 中填入你设定的域名前半部分</span></div><div class="line">  <span class="comment"># http://&lt;要填的部分&gt;.duoshuo.com (domain只填上&lt;&gt;里的内容，不要填整个网址)</span></div><div class="line"></div><div class="line"><span class="attr">youyan:</span></div><div class="line">  <span class="comment">#on: true</span></div><div class="line"><span class="attr">  id:</span> </div><div class="line">  <span class="comment"># 是否开启友言评论，http://www.uyan.cc/index.php</span></div><div class="line">  <span class="comment"># id 中填写你的友言用户数字ID，注册后进入后台管理即可查看</span></div><div class="line">  <span class="comment"># 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。</span></div><div class="line"></div><div class="line"><span class="comment"># &gt;&gt;&gt; &lt;&lt;&lt;</span></div></pre></td></tr></table></figure>
+<h2 id="模块代码"><a href="#模块代码" class="headerlink" title="模块代码"></a>模块代码</h2><p>模块代码已附在下载文件中，在此同时列出备用。依旧是使用 EJS 编写，引入一些信息，设置了几个变量，使用其他模板引擎请自行转换。所有评论模块都设置了 <code>id=&quot;comments&quot;</code>，以便有需要时通过锚点定位跳转到评论区。</p>
+<h3 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"disqus_thread"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="comment">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */</span></div><div class="line">    <span class="keyword">var</span> disqus_shortname = <span class="string">'&lt;%= shortname%&gt;'</span>; <span class="comment">// required: replace example with your forum shortname</span></div><div class="line"></div><div class="line">    <span class="comment">/* * * DON'T EDIT BELOW THIS LINE * * */</span></div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">var</span> dsq = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>); dsq.type = <span class="string">'text/javascript'</span>; dsq.async = <span class="literal">true</span>;</div><div class="line">      dsq.src = <span class="string">'//'</span> + disqus_shortname + <span class="string">'.disqus.com/embed.js'</span>;</div><div class="line">      (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(dsq);</div><div class="line">    &#125;)();</div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">noscript</span>&gt;</span>Please enable JavaScript to view the <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://disqus.com/?ref_noscript"</span>&gt;</span>comments powered by Disqus.<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">noscript</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"duoshuo"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 start --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ds-thread"</span> <span class="attr">data-thread-key</span>=<span class="string">"&lt;%= key%&gt;"</span> <span class="attr">data-title</span>=<span class="string">"&lt;%= title%&gt;"</span> <span class="attr">data-url</span>=<span class="string">"&lt;%= url%&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说评论框 end --&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">    <span class="keyword">var</span> duoshuoQuery = &#123;<span class="attr">short_name</span>:<span class="string">"&lt;%= theme.duoshuo.domain%&gt;"</span>&#125;;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">        ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">        ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">        (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </div><div class="line">         || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">    &#125;)();</div><div class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="友言评论"><a href="#友言评论" class="headerlink" title="友言评论"></a>友言评论</h3><figure class="highlight erb"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"youyan"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"uyan_frame"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://v2.uyan.cc/code/uyan.js?uid=&lt;%=</span></span> theme.youyan.id<span class="xml"><span class="tag"><span class="string">%&gt;"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><ol>
+<li><strong>多说评论</strong>: <a href="http://duoshuo.com/" target="_blank" rel="external">http://duoshuo.com/</a></li>
+<li><strong>友言评论</strong>: <a href="http://www.uyan.cc/" target="_blank" rel="external">http://www.uyan.cc/</a></li>
+<li><strong>Disqus</strong>: <a href="https://disqus.com/" target="_blank" rel="external">https://disqus.com/</a></li>
+<li><strong><em>refactor: comments code &amp; configuration 评论模块优化</em></strong> by <strong>MOxFIVE</strong> on <code>2016/01/01</code>: <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee/commit/3138ca36bd209fd9f79b60fbb6b15b44673560b5</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;目前自己的主题 &lt;a href=&quot;https://guozhivip.github.io/&quot;&gt;Yelee&lt;/a&gt; 已支持使用 Disqus, 多说和友言评论，代码逻辑和配置也做了些优化，应该是比较完善了。简单分离整理一下，分享于此，方便大家添加到自己制作或使用的主题中。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anki 自用卡片模板分享</title>
+    <link href="http://guozhivip.github.io/2016/09/23/anki-templates/"/>
+    <id>http://guozhivip.github.io/2016/09/23/anki-templates/</id>
+    <published>2016-09-23T12:34:38.000Z</published>
+    <updated>2016-12-28T04:04:56.916Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2><a href="http://ankisrs.net/" target="_blank" rel="external">Anki</a> 是一款卡片式的记忆辅助软件。软件在保持轻巧简洁的同时，各种设置也很丰富。另外， Anki 通过嵌入式的网页来展示卡片，大大增强了卡片样式的自定义功能。下面是目前自己常用的卡片样式代码，有折腾闲情的可以试试。<p></p>
+<a id="more"></a>
+<h2 id="基础模板"><a href="#基础模板" class="headerlink" title="基础模板"></a>基础模板</h2><p>标题居中，用不同背景色区分答案类型，设置圆角等样式。<br><img src="/resources/Anki-a1.png" alt="Anki-a1"></p>
+<h3 id="模板使用区域"><a href="#模板使用区域" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
+<li>主要需要填写如图所示4个区域。<br><img src="/resources/Anki-a2.png" alt="Anki-a2"></li>
+</ul>
+<h3 id="正面模板"><a href="#正面模板" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"&#123;&#123;logo&#125;&#125;"</span> <span class="attr">class</span>=<span class="string">"logo"</span>/&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"font-size:2em"</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.logo</span> &#123;</div><div class="line">	<span class="attribute">width</span>: <span class="number">9em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">2em</span> <span class="number">0</span> <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	 <span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	 <span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	 <span class="attribute">text-align</span>: justify;</div><div class="line">	 <span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	 <span class="attribute">border-radius</span>: <span class="number">1.2em</span> .<span class="number">3em</span>;</div><div class="line">	 <span class="attribute">padding</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="背面模板"><a href="#背面模板" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;&#123;FrontSide&#125;&#125;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>=<span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="带页脚模板"><a href="#带页脚模板" class="headerlink" title="带页脚模板"></a>带页脚模板</h2><p>加了页脚，左下显示标签分类信息，右下链接到设定的网址。</p>
+<p><img src="/resources/Anki-b1.png" alt="Anki-b1"></p>
+<h3 id="模板使用区域-1"><a href="#模板使用区域-1" class="headerlink" title="模板使用区域"></a>模板使用区域</h3><ul>
+<li>主要需要填写如图所示5个区域。</li>
+</ul>
+<p><img src="/resources/Anki-b2.png" alt="Anki-b2"></p>
+<h3 id="正面模板-1"><a href="#正面模板-1" class="headerlink" title="正面模板"></a>正面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">title</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">author</span>&gt;</span>M.ZH<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="样式-1"><a href="#样式-1" class="headerlink" title="样式"></a>样式</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.card</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.Chinese</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#edffc4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">1.2em</span> <span class="number">0.3em</span>;</div><div class="line">	<span class="attribute">padding </span>: <span class="number">0.5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.English</span> &#123;</div><div class="line">	<span class="attribute">font-family</span>: 方正中雅宋_GBK;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.5em</span>;</div><div class="line">	<span class="attribute">text-align</span>: justify;</div><div class="line">	<span class="attribute">background-color</span>: <span class="number">#ffe4f4</span>;</div><div class="line">	<span class="attribute">border-radius</span>: .<span class="number">3em</span>;</div><div class="line">	<span class="attribute">padding</span>: .<span class="number">5em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.front</span> &#123;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.8em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.item_eng</span> &#123;</div><div class="line">	<span class="attribute">padding-top </span>: <span class="number">5%</span>;</div><div class="line">	<span class="attribute">color</span>: orange;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">2em</span>;</div><div class="line"> &#125;</div><div class="line"><span class="selector-class">.tag</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span> &#123;</div><div class="line">	<span class="attribute">color</span>: grey;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.title</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">left</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.author</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1em</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.link</span> &#123;</div><div class="line">	<span class="attribute">display</span>: block;</div><div class="line">	<span class="attribute">position</span>: fixed;</div><div class="line">	<span class="attribute">right</span>: <span class="number">3%</span>;</div><div class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">color</span>: gray;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">1.1em</span>;</div><div class="line">	<span class="attribute">font-style</span>: italic;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="背面模板-1"><a href="#背面模板-1" class="headerlink" title="背面模板"></a>背面模板</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">item_eng</span>&gt;</span>&#123;&#123;Item_ENG&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">front</span>&gt;</span>&#123;&#123;Front&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">id</span>= <span class="string">answer</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>&#123;&#123;image&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">Chinese</span>&gt;</span>&#123;&#123;Chinese&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">English</span>&gt;</span>&#123;&#123;English&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&#123;&#123;Link&#125;&#125;"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">link</span>&gt;</span>Reference Site<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>= <span class="string">tag</span>&gt;</span>&#123;&#123;Tags&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="字体下载"><a href="#字体下载" class="headerlink" title="字体下载"></a>字体下载</h2><p>测试了不少字体，感觉 <a href="http://www.daimg.com/download.php?open=2&amp;id=12741&amp;uhash=1eb7c629071a1341f83bc53b" target="_blank" rel="external">方正中雅宋_GBK</a> 和这个软件最匹配。当然，大家可以自行修改<code>font-family</code>，换用喜欢的字体。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;&lt;a href=&quot;http://ankisrs.net/&quot;&gt;Anki&lt;/a&gt; 是一款卡片式的记忆辅助软件。软件在保持轻巧简洁的同时，各种设置也很丰富。另外， Anki 通过嵌入式的网页来展示卡片，大大增强了卡片样式的自定义功能。下面是目前自己常用的卡片样式代码，有折腾闲情的可以试试。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="触类旁通" scheme="http://guozhivip.github.io/categories/%E8%A7%A6%E7%B1%BB%E6%97%81%E9%80%9A/"/>
+    
+    
+      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
+    
+      <category term="HTML" scheme="http://guozhivip.github.io/tags/HTML/"/>
+    
+      <category term="Anki" scheme="http://guozhivip.github.io/tags/Anki/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Web Style Guide 前端代码规范</title>
-    <link href="http://guozhivip.github.io/2015/11/09/web-style-guide/"/>
-    <id>http://guozhivip.github.io/2015/11/09/web-style-guide/</id>
-    <published>2015-11-08T16:31:45.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/09/09/web-style-guide/"/>
+    <id>http://guozhivip.github.io/2016/09/09/web-style-guide/</id>
+    <published>2016-09-08T16:31:45.000Z</published>
+    <updated>2016-12-28T04:04:06.400Z</updated>
     
     <content type="html"><![CDATA[<p>　　在此记录自己已理解并开始遵循的前端代码规范。What How Why</p>
 <a id="more"></a>
@@ -958,107 +876,20 @@
       <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E8%87%AA%E7%94%A8%E7%AC%94%E8%AE%B0/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
     
     
-      <category term="HTML" scheme="http://guozhivip.github.io/tags/HTML/"/>
-    
       <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
+    
+      <category term="HTML" scheme="http://guozhivip.github.io/tags/HTML/"/>
     
       <category term="JavaScript" scheme="http://guozhivip.github.io/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
-    <title>让 Hexo 自动生成 Tag Cloud 标签云页面</title>
-    <link href="http://guozhivip.github.io/2015/10/25/hexo-tag-cloud/"/>
-    <id>http://guozhivip.github.io/2015/10/25/hexo-tag-cloud/</id>
-    <published>2015-10-25T04:08:49.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><h2 id="intro">前言</h2>参看上篇 <a href="/2015/10/16/hexo-404-page/">创建404页面</a> 的文章，我们可以轻易地创建一个链接为 <code>http://&quot;主页&quot;/tags/</code> 的页面，然后编辑对应 .md 文件设置样式。在此基础上，我们还需要在主题 layout 布局中添加代码，引入辅助函数，才能自动生成所需的标签云页面。下面简单介绍下实现过程。<p></p>
-<a id="more"></a>
-<p><img src="/resources/tag-cloud.png" alt="tag-cloud"></p>
-<h2 id="匹配页面"><a href="#匹配页面" class="headerlink" title="匹配页面"></a>匹配页面</h2><p>在主题文章的 layout 中合适位置插入下列 if 语句，让代码只在标签云页面生效。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;!-- page.path 表示不含根路径的页面网址。还有数种方式可以匹配页面，在此不赘述。 --&gt;</div><div class="line">&lt;% <span class="keyword">if</span> (page.path === <span class="string">"tags/index.html"</span>)&#123; %&gt;</div><div class="line">    &lt;引入 tags 页面的代码&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></td></tr></table></figure>
-<p>以主题 <a href="https://github.com/MOxFIVE/hexo-theme-yelee" title="简而不减 Hexo 双栏博客主题" target="_blank" rel="external">Yelee</a> 为例，须在 <code>/layout/_partial/article.ejs</code>, div <code>article-entry</code> 中插入代码。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div <span class="class"><span class="keyword">class</span>="<span class="title">article</span>-<span class="title">entry</span>" <span class="title">itemprop</span>="<span class="title">articleBody</span>"&gt;</span></div><div class="line">    &lt;% <span class="title">if</span> (<span class="title">post</span>.<span class="title">excerpt</span> &amp;&amp; <span class="title">index</span>)&#123; %&gt;</div><div class="line">        &lt;%- post.excerpt %&gt;</div><div class="line">    &lt;% &#125; <span class="keyword">else</span> &#123; %&gt;</div><div class="line">        &lt;% <span class="keyword">if</span> (page.path === <span class="string">"tags/index.html"</span>)&#123; %&gt;</div><div class="line">            &lt;引入 tags 页面的代码&gt;</div><div class="line">        &lt;% &#125; %&gt;</div><div class="line">        &lt;%- post.content %&gt;</div><div class="line">    &lt;% &#125; %&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<h2 id="插入标签云"><a href="#插入标签云" class="headerlink" title="插入标签云"></a>插入标签云</h2><p>使用 Hexo 辅助函数 <code>&lt;%- tagcloud([tags], [options]) %&gt;</code> 插入标签云，参数详解请查看 <a href="https://hexo.io/zh-cn/docs/helpers.html#tagcloud" title="tagcloud: 插入标签云" target="_blank" rel="external">官方文档</a>。</p>
-<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;%- tagcloud(&#123;</div><div class="line">    min_font: <span class="number">16</span>, </div><div class="line">    max_font: <span class="number">35</span>, </div><div class="line">    amount: <span class="number">999</span>, </div><div class="line">    color: <span class="literal">true</span>, </div><div class="line">    start_color: <span class="string">'gray'</span>, </div><div class="line">    end_color: <span class="string">'black'</span>,</div><div class="line">&#125;) %&gt;</div></pre></td></tr></table></figure>
-<h2 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h2><p>审查元素，按需修改相关样式。下面是目前本博客 <a href="/tags">标签云页面</a> 所添加的代码，附上供参考。</p>
-<figure class="highlight erb"><figcaption><span>/layout/_partial/article.ejs</span><a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3a82bb65b325826b3f71cae10e39e5314ccb63cb" target="_blank" rel="external">tag cloud page</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%</span></span></span> if (page.path === "tags/index.html")&#123; <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">hr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%-</span></span> list_categories(&#123;</div><div class="line">        depth: 1,</div><div class="line">    &#125;) <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"tags"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">%-</span></span> tagcloud(&#123;</div><div class="line">            min_font: 16, </div><div class="line">            max_font: 35, </div><div class="line">            amount: 999, </div><div class="line">            color: true, </div><div class="line">            start_color: 'gray', </div><div class="line">            end_color: 'black',</div><div class="line">        &#125;) <span class="xml"><span class="tag">%&gt;</span></span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">        <span class="selector-class">.category-list</span> <span class="selector-tag">li</span>&#123;</div><div class="line">            <span class="attribute">display</span>: inline-block;</div><div class="line">            <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">1em</span> .<span class="number">5em</span> <span class="number">0</span>;</div><div class="line">            <span class="attribute">padding</span>: <span class="number">4px</span>;</div><div class="line">            <span class="attribute">border</span>: <span class="number">1px</span> solid lightgray;</div><div class="line">            <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">color</span>: gray;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list-item</span><span class="selector-pseudo">:hover</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">color</span>: gray;</div><div class="line">            <span class="attribute">text-decoration</span>: none;</div><div class="line">            <span class="attribute">font-weight</span>: bold;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.category-list-count</span> &#123;</div><div class="line">            <span class="attribute">margin-left</span>: <span class="number">2px</span>;</div><div class="line">            <span class="attribute">font-size</span>: .<span class="number">9em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.article-entry</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-pseudo">:before</span>&#123;</div><div class="line">            <span class="attribute">display</span>: none;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.article-inner</span>  &#123;</div><div class="line">            <span class="attribute">text-align</span>: center;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> &#123;</div><div class="line">            <span class="attribute">max-width</span>: <span class="number">40em</span>;</div><div class="line">            <span class="attribute">margin</span>: <span class="number">2em</span> auto;</div><div class="line">            <span class="attribute">margin-top</span>: <span class="number">0em</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> <span class="selector-tag">a</span> &#123;</div><div class="line">            <span class="attribute">margin-right</span>: <span class="number">1em</span>;</div><div class="line">            <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid gray;</div><div class="line">            <span class="attribute">line-height</span>: <span class="number">65px</span>;</div><div class="line">            <span class="attribute">white-space</span>: nowrap;</div><div class="line">        &#125;</div><div class="line">        <span class="selector-class">.tags</span> <span class="selector-tag">a</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">            <span class="attribute">border-bottom</span>: <span class="number">2px</span> solid black;</div><div class="line">            <span class="attribute">font-style</span>: italic;</div><div class="line">            <span class="attribute">text-decoration</span>: none;</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">%</span></span> &#125; <span class="xml"><span class="tag">%&gt;</span></span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>知道怎么在特定页面中引入 Hexo 自带的函数和变量后，大家应该就可以比较自在地在文章中引入需要的内容了，标签列表，文章列表，文章地址，日期时间等都可以。</p>
-</blockquote>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
-<li><strong><em>tagcloud: 插入标签云</em></strong> by <strong>Hexo</strong> on <code>2015</code>: <a href="https://hexo.io/zh-cn/docs/helpers.html#tagcloud" target="_blank" rel="external">https://hexo.io/zh-cn/docs/helpers.html#tagcloud</a></li>
-<li><strong><em>变量使用</em></strong> by <strong>Hexo</strong> on <code>2015</code>: <a href="https://hexo.io/zh-cn/docs/variables.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/variables.html</a></li>
-<li><strong><em>feat: tags cloud page 标签云页面</em></strong> by <strong>MOxFIVE</strong> on <code>2015/10/12</code>: <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/3a82bb65b325826b3f71cae10e39e5314ccb63cb" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee/commit/3a82bb65b325826b3f71cae10e39e5314ccb63cb</a></li>
-<li><strong><em>统计分类及标签数</em></strong> by <strong>MOxFIVE</strong> on <code>2015/12/1</code>: <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commit/56abe4226454571335a62120ab404792f274437f" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee/commit/56abe4226454571335a62120ab404792f274437f</a></li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;h2 id=&quot;intro&quot;&gt;前言&lt;/h2&gt;参看上篇 &lt;a href=&quot;/2015/10/16/hexo-404-page/&quot;&gt;创建404页面&lt;/a&gt; 的文章，我们可以轻易地创建一个链接为 &lt;code&gt;http://&amp;quot;主页&amp;quot;/tags/&lt;/code&gt; 的页面，然后编辑对应 .md 文件设置样式。在此基础上，我们还需要在主题 layout 布局中添加代码，引入辅助函数，才能自动生成所需的标签云页面。下面简单介绍下实现过程。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
-    
-      <category term="TagCloud" scheme="http://guozhivip.github.io/tags/TagCloud/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在 Hexo 中创建匹配主题的404页面</title>
-    <link href="http://guozhivip.github.io/2015/10/16/hexo-404-page/"/>
-    <id>http://guozhivip.github.io/2015/10/16/hexo-404-page/</id>
-    <published>2015-10-15T16:23:39.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>　　通常，对于绑定了顶级域名的 Hexo 博客来说，只需在所用主题的<code>source</code>文件夹下新建一个<code>404.html</code>文件，再生成部署到云端，即可生成博客404页面。但这种方法生成的页面是孤立的，下面介绍一种生成匹配主题的404页面的方法。</p>
-<a id="more"></a>
-<p><img src="/resources/404-page.jpg" alt="404-page"></p>
-<h3 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h3><blockquote>
-<ol>
-<li>启动 Git Bash，进入 Hexo 所在文件夹，输入 <code>hexo new page 404</code> ;</li>
-<li>打开刚新建的页面文件，默认在 Hexo 文件夹根目录下 <code>/source/404/index.md</code>；</li>
-<li>在顶部插入一行，写上<code>permalink: /404</code>，这表示指定该页固定链接为 <code>http://&quot;主页&quot;/404.html</code></li>
-</ol>
-</blockquote>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="number">404</span> Not Found：该页无法显示</div><div class="line"><span class="attr">toc:</span> <span class="literal">false</span></div><div class="line"><span class="attr">comments:</span> <span class="literal">false</span></div><div class="line"><span class="attr">permalink:</span> /<span class="number">404</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure>
-<h3 id="自定义页面样式"><a href="#自定义页面样式" class="headerlink" title="自定义页面样式"></a>自定义页面样式</h3><p>　　经过上面的设置后，404界面已生效，其编辑方式与一般文章无异。我们可以在.md文件正文中插入一些 CSS 样式，使得该页面与博客中的一般文章有所区别。下面是我个人为配合本博客主题所设置的一些样式，仅供参考，具体修改自行审查所用主题。</p>
-<blockquote>
-<p><a href="http://moxfive.xyz/举个404页面栗子" target="_blank" rel="external">http://moxfive.xyz/举个404页面栗子</a></p>
-</blockquote>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line">title: 404 Not Found：该页无法显示</div><div class="line">toc: false</div><div class="line">comments: false</div><div class="line">permalink: /404</div><div class="line">---</div><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="css"></span></div><div class="line">	<span class="selector-class">.article-header</span> &#123;</div><div class="line">		<span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">		<span class="attribute">padding-top</span>: <span class="number">26px</span>;</div><div class="line">		<span class="attribute">border-left</span>: none;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-header</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">		<span class="attribute">border-left</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-title</span> &#123;</div><div class="line">		<span class="attribute">font-size</span>: <span class="number">2.1em</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-tag">strong</span> <span class="selector-tag">a</span> &#123;</div><div class="line">		<span class="attribute">color</span>: <span class="number">#747474</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-meta</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.share</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.ds-meta</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.player</span> &#123;</div><div class="line">		<span class="attribute">margin-left</span>: -<span class="number">10px</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.sign</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: right;</div><div class="line">		<span class="attribute">font-style</span>: italic;</div><div class="line">	&#125;</div><div class="line">  	<span class="selector-id">#page-visit</span> &#123;</div><div class="line">		<span class="attribute">display</span>: none;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.center</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">		<span class="attribute">height</span>: <span class="number">2.5em</span>;</div><div class="line">		<span class="attribute">font-weight</span>: bold;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.article-entry</span> <span class="selector-tag">hr</span> &#123;</div><div class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.pic</span> &#123;</div><div class="line">		<span class="attribute">text-align</span>: center;</div><div class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="selector-class">.pic</span> <span class="selector-tag">br</span> &#123;</div><div class="line">  		<span class="attribute">display</span>: none;</div><div class="line">  	&#125;</div><div class="line">	<span class="selector-id">#container</span> <span class="selector-class">.article-info-post</span><span class="selector-class">.article-info</span> &#123;</div><div class="line">  	<span class="attribute">display</span>: none;</div><div class="line">  	&#125;</div><div class="line">	<span class="selector-id">#container</span> <span class="selector-class">.article</span> <span class="selector-class">.article-title</span> &#123;</div><div class="line">	<span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">	&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
-<li><strong><em>Custom 404 Pages</em></strong> by <strong>GitHub Help</strong> on <code>2015</code>: <a href="https://help.github.com/articles/custom-404-pages/" target="_blank" rel="external">https://help.github.com/articles/custom-404-pages/</a> </li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　通常，对于绑定了顶级域名的 Hexo 博客来说，只需在所用主题的&lt;code&gt;source&lt;/code&gt;文件夹下新建一个&lt;code&gt;404.html&lt;/code&gt;文件，再生成部署到云端，即可生成博客404页面。但这种方法生成的页面是孤立的，下面介绍一种生成匹配主题的404页面的方法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
-    
-    
-      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
-    
-      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
     <title>EndNote 与 Markdown 结合 — 为网文快速添加 Reference</title>
-    <link href="http://guozhivip.github.io/2015/08/30/EndNote-Markdown/"/>
-    <id>http://guozhivip.github.io/2015/08/30/EndNote-Markdown/</id>
-    <published>2015-08-29T16:00:00.000Z</published>
-    <updated>2016-07-25T07:05:40.000Z</updated>
+    <link href="http://guozhivip.github.io/2016/08/30/EndNote-Markdown/"/>
+    <id>http://guozhivip.github.io/2016/08/30/EndNote-Markdown/</id>
+    <published>2016-08-29T16:00:00.000Z</published>
+    <updated>2016-12-28T04:02:16.791Z</updated>
     
     <content type="html"><![CDATA[<p>　　最近正在学习用 Markdown 写文章，网上搜了一圈，没找到称心的插入参考资料列表 Reference 的方法。想起自己一直在用 EndNote 管理文献，索性网络博文的文献也用 EndNote 管理好了。</p>
 <p>　　参考 Markdown 的语法，修改了 EndNote 文献的导出格式，生成的列表较简洁，样式自定义，排序和维护都比较方便，基本满足了自己的要求。</p>
@@ -1079,7 +910,7 @@
 <h3 id="生成列表"><a href="#生成列表" class="headerlink" title="生成列表"></a>生成列表</h3><ol>
 <li>如下图，下拉列表切换为 Markdown List 样式，点新建文献按钮，填入作者、标题、日期和链接后保存；<br><img src="/resources/EndNote-item.jpg" alt="EndNote-item"></li>
 <li><p>选取添加好的文献，右键选 Copy Formatted，在 Markdown 正文末尾加一个标题，把列表粘贴其下；</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 参考资料:</span></div><div class="line"><span class="bullet">1. </span><span class="strong">***认识与入门 Markdown**</span><span class="bullet">* by *</span><span class="emphasis">*Te_Lee*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2014/04/17<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">sspai.com</span>/<span class="attr">25137</span>&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***Markdown 语法说明**</span><span class="bullet">* by *</span><span class="emphasis">*riku*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2012<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">wowubuntu.com</span>/<span class="attr">markdown</span>/&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***使用 GitHub 和 Hexo 搭建免费静态 Blog**</span><span class="bullet">* by *</span><span class="emphasis">*wsgzao*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2015/03/23<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">www.v2ex.com</span>/<span class="attr">t</span>/<span class="attr">178642</span>&gt;</span></span> </div><div class="line">~~~~~~~~~</div><div class="line"><span class="section">##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; </span></div><div class="line"><span class="bullet">1. </span><span class="strong">**GitHub**</span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">github.com</span>/<span class="attr">MOxFIVE</span>&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 参考资料:</span></div><div class="line"><span class="bullet">1. </span><span class="strong">***认识与入门 Markdown**</span><span class="bullet">* by *</span><span class="emphasis">*Te_Lee*</span>* on &lt;code&gt;2014/04/17&lt;/code&gt;: &lt;http://sspai.com/25137&gt; </div><div class="line"><span class="bullet">1. </span><span class="strong">***Markdown 语法说明**</span><span class="bullet">* by *</span><span class="emphasis">*riku*</span>* on &lt;code&gt;2012&lt;/code&gt;: &lt;http://wowubuntu.com/markdown/&gt; </div><div class="line"><span class="bullet">1. </span><span class="strong">***使用 GitHub 和 Hexo 搭建免费静态 Blog**</span><span class="bullet">* by *</span><span class="emphasis">*wsgzao*</span>* on &lt;code&gt;2015/03/23&lt;/code&gt;: &lt;https://www.v2ex.com/t/178642&gt; </div><div class="line">~~~~~~~~~</div><div class="line"><span class="section">##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; </span></div><div class="line"><span class="bullet">1. </span><span class="strong">**GitHub**</span>: &lt;https://github.com/MOxFIVE&gt;</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h3><ol>
@@ -1115,6 +946,129 @@
       <category term="Markdown" scheme="http://guozhivip.github.io/tags/Markdown/"/>
     
       <category term="Reference" scheme="http://guozhivip.github.io/tags/Reference/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 最常用的几个命令</title>
+    <link href="http://guozhivip.github.io/2016/07/21/common-hexo-commands/"/>
+    <id>http://guozhivip.github.io/2016/07/21/common-hexo-commands/</id>
+    <published>2016-07-21T14:12:04.000Z</published>
+    <updated>2016-12-28T04:05:54.448Z</updated>
+    
+    <content type="html"><![CDATA[<style>
+    .article-entry h2 {
+        border-bottom: none;
+    }
+</style>
+
+<p>　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: </p>
+<a id="more"></a>
+<h2 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
+<p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<ul>
+<li><code>hexo s</code> 是 <code>hexo server</code> 的缩写，命令效果一致；</li>
+<li>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li>
+<li>对 Hexo 根目录 <code>_config.yml</code> 的修改，需要重启本地服务器后才能预览效果。</li>
+</ul>
+<h2 id="hexo-n"><a href="#hexo-n" class="headerlink" title="hexo n"></a>hexo n</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n &quot;学习笔记  六&quot;</div></pre></td></tr></table></figure>
+<p>新建一篇标题为 <code>学习笔记  六</code> 的文章，因为标题里有空格，所以加上了引号。</p>
+<ul>
+<li>文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；</li>
+<li><code>hexo n</code> 是 <code>hexo new</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>自动生成网站静态文件，并部署到设定的仓库。</p>
+<ul>
+<li><code>hexo d</code> 是 <code>hexo deploy</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
+<p>清除缓存文件 <code>db.json</code> 和已生成的静态文件 <code>public</code>。</p>
+<ul>
+<li>网站显示异常时可以执行这条命令试试。</li>
+</ul>
+<h2 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<p>生成网站静态文件到默认设置的 <code>public</code> 文件夹。</p>
+<ul>
+<li>便于查看网站生成的静态文件或者手动部署网站；</li>
+<li>如果使用自动部署，不需要先执行该命令；</li>
+<li><code>hexo g</code> 是 <code>hexo generate</code> 的缩写，命令效果一致。</li>
+</ul>
+<h2 id="hexo-n-page"><a href="#hexo-n-page" class="headerlink" title="hexo n page"></a>hexo n page</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo n page aboutme</div></pre></td></tr></table></figure>
+<p>新建一个标题为 <code>aboutme</code> 的页面，默认链接地址为 <code>主页地址/aboutme/</code></p>
+<ul>
+<li>标题可以为中文，但一般习惯用英文；</li>
+<li>页面标题和文章一样可以随意修改；</li>
+<li>页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</li>
+</ul>
+<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo clean &amp;&amp; hexo s</div><div class="line">hexo clean &amp;&amp; hexo d</div></pre></td></tr></table></figure>
+<p>可以用输入法等软件为这些命令设置快捷键，方便调用。</p>
+<h2 id="相关说明"><a href="#相关说明" class="headerlink" title="相关说明"></a>相关说明</h2><ul>
+<li>以上命令使用基于 Hexo 3.1.1 版本；</li>
+<li>需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 <code>source</code> 文件夹，删除对应文件或文件夹即可；</li>
+<li>更多命令用法请查询 <a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">官方文档</a>。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;style&gt;
+    .article-entry h2 {
+        border-bottom: none;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;　　Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个: &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Hexo 中创建匹配主题的404页面</title>
+    <link href="http://guozhivip.github.io/2016/07/16/hexo-404-page/"/>
+    <id>http://guozhivip.github.io/2016/07/16/hexo-404-page/</id>
+    <published>2016-07-15T16:23:39.000Z</published>
+    <updated>2016-12-28T04:03:09.010Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　通常，对于绑定了顶级域名的 Hexo 博客来说，只需在所用主题的<code>source</code>文件夹下新建一个<code>404.html</code>文件，再生成部署到云端，即可生成博客404页面。但这种方法生成的页面是孤立的，下面介绍一种生成匹配主题的404页面的方法。</p>
+<a id="more"></a>
+<p><img src="/resources/404-page.jpg" alt="404-page"></p>
+<h3 id="新建404页面"><a href="#新建404页面" class="headerlink" title="新建404页面"></a>新建404页面</h3><blockquote>
+<ol>
+<li>启动 Git Bash，进入 Hexo 所在文件夹，输入 <code>hexo new page 404</code> ;</li>
+<li>打开刚新建的页面文件，默认在 Hexo 文件夹根目录下 <code>/source/404/index.md</code>；</li>
+<li>在顶部插入一行，写上<code>permalink: /404</code>，这表示指定该页固定链接为 <code>http://&quot;主页&quot;/404.html</code></li>
+</ol>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="number">404</span> Not Found：该页无法显示</div><div class="line"><span class="attr">toc:</span> <span class="literal">false</span></div><div class="line"><span class="attr">comments:</span> <span class="literal">false</span></div><div class="line"><span class="attr">permalink:</span> /<span class="number">404</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure>
+<h3 id="自定义页面样式"><a href="#自定义页面样式" class="headerlink" title="自定义页面样式"></a>自定义页面样式</h3><p>　　经过上面的设置后，404界面已生效，其编辑方式与一般文章无异。我们可以在.md文件正文中插入一些 CSS 样式，使得该页面与博客中的一般文章有所区别。下面是我个人为配合本博客主题所设置的一些样式，仅供参考，具体修改自行审查所用主题。</p>
+<blockquote>
+<p><a href="http://moxfive.xyz/举个404页面栗子" target="_blank" rel="external">http://moxfive.xyz/举个404页面栗子</a></p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line">title: 404 Not Found：该页无法显示</div><div class="line">toc: false</div><div class="line">comments: false</div><div class="line">permalink: /404</div><div class="line">---</div><div class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span><span class="undefined"></span></div><div class="line">	.article-header &#123;</div><div class="line">		padding: 0;</div><div class="line">		padding-top: 26px;</div><div class="line">		border-left: none;</div><div class="line">		text-align: center;</div><div class="line">	&#125;</div><div class="line">	.article-header:hover &#123;</div><div class="line">		border-left: none;</div><div class="line">	&#125;</div><div class="line">	.article-title &#123;</div><div class="line">		font-size: 2.1em;</div><div class="line">	&#125;</div><div class="line">	strong a &#123;</div><div class="line">		color: #747474;</div><div class="line">	&#125;</div><div class="line">	.article-meta &#123;</div><div class="line">		display: none;</div><div class="line">	&#125;</div><div class="line">	.share &#123;</div><div class="line">		display: none;</div><div class="line">	&#125;</div><div class="line">	.ds-meta &#123;</div><div class="line">		display: none;</div><div class="line">	&#125;</div><div class="line">	.player &#123;</div><div class="line">		margin-left: -10px;</div><div class="line">	&#125;</div><div class="line">	.sign &#123;</div><div class="line">		text-align: right;</div><div class="line">		font-style: italic;</div><div class="line">	&#125;</div><div class="line">  	#page-visit &#123;</div><div class="line">		display: none;</div><div class="line">	&#125;</div><div class="line">	.center &#123;</div><div class="line">		text-align: center;</div><div class="line">		height: 2.5em;</div><div class="line">		font-weight: bold;</div><div class="line">	&#125;</div><div class="line">	.article-entry hr &#123;</div><div class="line">		margin: 0;</div><div class="line">	&#125;</div><div class="line">	.pic &#123;</div><div class="line">		text-align: center;</div><div class="line">		margin: 0;</div><div class="line">	&#125;</div><div class="line">	.pic br &#123;</div><div class="line">  		display: none;</div><div class="line">  	&#125;</div><div class="line">	#container .article-info-post.article-info &#123;</div><div class="line">  	display: none;</div><div class="line">  	&#125;</div><div class="line">	#container .article .article-title &#123;</div><div class="line">	padding: 0;</div><div class="line">	&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ol>
+<li><strong><em>Custom 404 Pages</em></strong> by <strong>GitHub Help</strong> on <code>2015</code>: <a href="https://help.github.com/articles/custom-404-pages/" target="_blank" rel="external">https://help.github.com/articles/custom-404-pages/</a> </li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　通常，对于绑定了顶级域名的 Hexo 博客来说，只需在所用主题的&lt;code&gt;source&lt;/code&gt;文件夹下新建一个&lt;code&gt;404.html&lt;/code&gt;文件，再生成部署到云端，即可生成博客404页面。但这种方法生成的页面是孤立的，下面介绍一种生成匹配主题的404页面的方法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="术业专攻" scheme="http://guozhivip.github.io/categories/%E6%9C%AF%E4%B8%9A%E4%B8%93%E6%94%BB/"/>
+    
+    
+      <category term="Hexo" scheme="http://guozhivip.github.io/tags/Hexo/"/>
+    
+      <category term="CSS" scheme="http://guozhivip.github.io/tags/CSS/"/>
     
   </entry>
   
