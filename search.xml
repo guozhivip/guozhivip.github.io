@@ -29,6 +29,22 @@
 ]]></content>
     </entry>
     
+    <entry>
+      <title><![CDATA[每日一记录]]></title>
+      <url>http://guozhivip.github.io/2016/12/25/hexo-tag-cloud/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    </entry>
+    
   
   
     
@@ -42,7 +58,14 @@
     <entry>
       <title></title>
       <url>http://guozhivip.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<h2 id="about-me"><a href="#about-me" class="headerlink" title="about me"></a>about me</h2><div align="center"><img src="https://guozhivip.github.io/img/avatar.png" alt="果汁教育创始人" height="565px" width="565px" style="margin-top: 15px"></div>
+      <content type="html"><![CDATA[<p>title: about me<br>date: 2016-12-18<br>tags:</p>
+<ul>
+<li>about<br>permalink: </li>
+</ul>
+<hr>
+<p>　　一个伪文艺青年。</p>
+<a id="more"></a>
+<div align="center"><img src="https://guozhivip.github.io/img/avatar.png" alt="果汁教育创始人" height="565px" width="565px" style="margin-top: 15px"></div>
 
 <blockquote>
 <p>郭力，毕业于西安科技大学，2016年1月12日创办果汁教育在线学习网站，不走寻常路的前端开发工程师，新媒体运营新秀，所独立运营的自媒体公众号<code>果汁英语</code>目前已成功入<code>驻腾讯新闻</code>，<code>网易新闻</code>，<code>搜狐新闻</code>，<code>百度百家</code>，<code>今日头条</code>等主流媒体平台且用户数量逐日上升。同时也是一枚资深旅行摄影爱好者，一本不正经的伪文艺青年。</p>
