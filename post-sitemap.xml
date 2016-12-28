@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://guozhivip.github.io/2016/07/16/hexo-404-page/</loc>
+        <lastmod>2016-12-28T05:34:51.294Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://guozhivip.github.io/2016/10/10/hexo-post-version-control/</loc>
         <lastmod>2016-12-28T05:18:21.291Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -105,14 +113,6 @@
     <url>
         <loc>http://guozhivip.github.io/2016/09/09/web-style-guide/</loc>
         <lastmod>2016-12-28T04:04:06.400Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://guozhivip.github.io/2016/07/16/hexo-404-page/</loc>
-        <lastmod>2016-12-28T04:03:09.010Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
