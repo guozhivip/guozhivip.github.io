@@ -37,9 +37,9 @@
 </li>
 <li><p>2016年10月15日，工作转正，实现个人财务自由。</p>
 </li>
-<li><p>2016年11月18日，果汁摄影平台<a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external"> Sight </a>上线，精选各种旅行摄影美图，带你游览世界。</p>
+<li><p>2016年11月18日，果汁摄影平台<a href="http://guozhivip.com/sight/Sight.html" target="_blank" rel="external"> Sight </a>上线，精选各种旅行摄影美图，带你游览世界。</p>
 </li>
-<li><p>2016年12月27日，个人博客系统<a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external"> GuoLi’s Blog </a>正式上线，采用自适应设计，记录果汁君前端开发技术成长。</p>
+<li><p>2016年12月27日，个人博客系统<a href="https://guozhivip.github.io/"> GuoLi’s Blog </a>正式上线，采用自适应设计，记录果汁君前端开发技术成长。</p>
 </li>
 <li><p>2017年，继续努力学习，努力工作，努力锻炼，努力旅游，实现自己的各种小目标。</p>
 </li>
@@ -824,12 +824,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>http://guozhivip.github.io/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[about]]></title>
       <url>http://guozhivip.github.io/about/index.html</url>
       <content type="html"><![CDATA[<p>   一个爱折腾的伪文艺青年。</p>
@@ -848,6 +842,12 @@
 <li><a href="http://guozhivip.com/about_us/about_guozhi.html" target="_blank" rel="external">了解果汁</a></li>
 </ul>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>http://guozhivip.github.io/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
