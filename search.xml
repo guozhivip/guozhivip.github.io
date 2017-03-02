@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title><![CDATA[2016年小事件总结]]></title>
+      <url>http://guozhivip.github.io/2017/01/05/Personal%20Summary/</url>
+      <content type="html"><![CDATA[<h2 id="2016年小事件总结"><a href="#2016年小事件总结" class="headerlink" title="2016年小事件总结:"></a><strong>2016年小事件总结:</strong></h2><blockquote>
+<p>作者：郭力，果汁英语创始人。果汁英语网旗下主要有果汁资源导航，果汁高级搜索，果汁摄影（Sight），果汁技术博客，果汁云应用等产品。主要服务于学生群体及广大英语爱好者，在这里，你可以找到属于自己的知识营养。如果你喜欢也喜欢果汁英语，在今日头条，腾讯新闻，知乎，网易新闻，天天快报，搜狐新闻等手机客户端直接搜索<strong>“果汁英语”</strong>也可以关注我们。</p>
+</blockquote>
+<a id="more"></a>
+<p>## </p>
+<ul>
+<li>2016年1月12日，2016年1月12日，<a href="http://www.guozhivip.com/" target="_blank" rel="external">果汁英语网（guozhivip.com）</a>在资深前端开发者郭力先生的努力下成功上线。<br>## </li>
+<li>2016年1月22日，<a href="http://guozhivip.com/guozhi_recom/guozhi_recom.html" target="_blank" rel="external">果汁资源导航 </a>模块开发完成并上线，收录了各种优质实用型网站（主要包括日常应用，英语学习，编程学习，考研，找工作，影视娱乐等网站），采用简约板块式设计，实现了绿色优质便捷网址导航。<br>## </li>
+<li>2016年2月21日，<a href="http://www.guozhivip.com/guozhi_recom/advanced_lead.html" target="_blank" rel="external">果汁高级搜索 </a>成功上线。用户在搜索时可根据需求自主选择百度搜索，搜狗搜索，360搜索任何一种搜索引擎进行搜索，此外，还提供了知乎，淘宝，优酷三种搜索方式的便捷入口以及每日热点新闻，热门电影，综艺节目排行榜，可搜知乎问答，生活物品，视频音乐等。<br>## </li>
+<li>2016年3月2日，果汁教育网站移动端正式上线，同时已被百度，Google，搜狗，360等主流搜索引擎收录。<br>## </li>
+<li>2016年3月8日，自己人生中第一个自媒体平台（<strong>微信公众号：果汁英语</strong>，分享打动人心的事物，找到属于自己的知识营养。）正式建立开通。<br>## </li>
+<li>2016年4月10日 - 4月18日，在四川长虹公司实习。<br>## </li>
+<li>2016年4月21日，个人公众号原创文章第一次授权被微信公众号大号“<strong>壹课</strong>”转载；5月3日第二次被转载，阅读量均达5000以上。<br>## </li>
+<li>2016年5月，大学毕业设计准备及毕业论文撰写。<br>## </li>
+<li>2016年6月12日，受腾讯微信邀请，公众号<strong>果汁英语</strong>正式开通原创保护及文章留言评论，并于15日开通赞赏功能。<br>## </li>
+<li>2016年6月28日，“果汁英语”开通自媒体平台—头条号，成功入驻当下最受欢迎新闻咨询平台“<strong>今日头条</strong>”。<br>## </li>
+<li>2016年7月10日，大学毕业，学生时代正式结束，远离家乡，开始了自己人生中第一份正式工作。<br>## </li>
+<li>2016年8月13日，“<strong>果汁英语</strong>”开通企鹅号，成功入驻天天快报及腾讯新闻。<br>## </li>
+<li>2016年8月31日，受网易新闻编辑邀请，果汁英语网易号自媒体平台开通，成功入驻网易新闻。<br>## </li>
+<li>2016年10月15日，工作转正，实现个人财务自由。<br>## </li>
+<li>2016年11月18日，果汁摄影平台<a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external"> Sight </a>上线，精选各种旅行摄影美图，带你游览世界。<br>## </li>
+<li>2016年12月27日，个人博客系统<a href="https://github.com/MOxFIVE/Markdown-Archives-Backup" target="_blank" rel="external"> GuoLi’s Blog </a>正式上线，采用自适应设计，记录果汁君前端开发技术成长。<br>## </li>
+<li>2017年，继续努力学习，努力工作，努力锻炼，努力旅游，实现自己的各种小目标。</li>
+</ul>
+<p>—— 编辑时间：2016.12.31 ——</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[几个国内专用的公共 DNS]]></title>
       <url>http://guozhivip.github.io/2016/12/11/public-dns/</url>
       <content type="html"><![CDATA[<p>　　之前 <a href="http://www.bootcdn.cn/" target="_blank" rel="external">有个网站</a> 自己经常上不去，查了挺久才发现是 DNS 的问题，更换为公共 DNS 后访问恢复正常。由此可见，挑选一个合适自己网络的 DNS 还是挺有必要的。</p>
@@ -664,7 +695,7 @@
 <h3 id="生成列表"><a href="#生成列表" class="headerlink" title="生成列表"></a>生成列表</h3><ol>
 <li>如下图，下拉列表切换为 Markdown List 样式，点新建文献按钮，填入作者、标题、日期和链接后保存；<br><img src="/resources/EndNote-item.jpg" alt="EndNote-item"></li>
 <li><p>选取添加好的文献，右键选 Copy Formatted，在 Markdown 正文末尾加一个标题，把列表粘贴其下；</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 参考资料:</span></div><div class="line"><span class="bullet">1. </span><span class="strong">***认识与入门 Markdown**</span><span class="bullet">* by *</span><span class="emphasis">*Te_Lee*</span>* on &lt;code&gt;2014/04/17&lt;/code&gt;: &lt;http://sspai.com/25137&gt; </div><div class="line"><span class="bullet">1. </span><span class="strong">***Markdown 语法说明**</span><span class="bullet">* by *</span><span class="emphasis">*riku*</span>* on &lt;code&gt;2012&lt;/code&gt;: &lt;http://wowubuntu.com/markdown/&gt; </div><div class="line"><span class="bullet">1. </span><span class="strong">***使用 GitHub 和 Hexo 搭建免费静态 Blog**</span><span class="bullet">* by *</span><span class="emphasis">*wsgzao*</span>* on &lt;code&gt;2015/03/23&lt;/code&gt;: &lt;https://www.v2ex.com/t/178642&gt; </div><div class="line">~~~~~~~~~</div><div class="line"><span class="section">##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; </span></div><div class="line"><span class="bullet">1. </span><span class="strong">**GitHub**</span>: &lt;https://github.com/MOxFIVE&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="section">### 参考资料:</span></div><div class="line"><span class="bullet">1. </span><span class="strong">***认识与入门 Markdown**</span><span class="bullet">* by *</span><span class="emphasis">*Te_Lee*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2014/04/17<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">sspai.com</span>/<span class="attr">25137</span>&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***Markdown 语法说明**</span><span class="bullet">* by *</span><span class="emphasis">*riku*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2012<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">wowubuntu.com</span>/<span class="attr">markdown</span>/&gt;</span></span> </div><div class="line"><span class="bullet">1. </span><span class="strong">***使用 GitHub 和 Hexo 搭建免费静态 Blog**</span><span class="bullet">* by *</span><span class="emphasis">*wsgzao*</span>* on <span class="xml"><span class="tag">&lt;<span class="name">code</span>&gt;</span></span>2015/03/23<span class="xml"><span class="tag">&lt;/<span class="name">code</span>&gt;</span></span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">www.v2ex.com</span>/<span class="attr">t</span>/<span class="attr">178642</span>&gt;</span></span> </div><div class="line">~~~~~~~~~</div><div class="line"><span class="section">##### 上面是文章List样式，单一主页的样式先切换到Markdown Homepage再复制; </span></div><div class="line"><span class="bullet">1. </span><span class="strong">**GitHub**</span>: <span class="xml"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">github.com</span>/<span class="attr">MOxFIVE</span>&gt;</span></span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="效果预览"><a href="#效果预览" class="headerlink" title="效果预览"></a>效果预览</h3><ol>
@@ -769,6 +800,12 @@
   
     
     <entry>
+      <title><![CDATA[tags]]></title>
+      <url>http://guozhivip.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[404]]></title>
       <url>http://guozhivip.github.io/404/index.html</url>
       <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
@@ -793,12 +830,6 @@
 <li><a href="http://guozhivip.com/about_us/about_guozhi.html" target="_blank" rel="external">了解果汁</a></li>
 </ul>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[tags]]></title>
-      <url>http://guozhivip.github.io/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
