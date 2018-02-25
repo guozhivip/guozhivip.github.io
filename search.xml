@@ -46,9 +46,9 @@
 <ul>
 <li>[果汁英语旗下都有什么？]</li>
 </ul>
-<p>① <a href="http://www.guozhivip.com/guozhi_recom/guozhi_recom.html" target="_blank" rel="external">果汁资源导航</a></p>
+<p>① <a href="http://www.guozhivip.com/nav" target="_blank" rel="external">果汁资源导航</a></p>
 <p>&emsp;&emsp;收录了各种优质实用型网站（主要包括日常应用，实用工具，英语学习，编程学习，考研，找工作，影视娱乐等网站），采用简约板块式设计，实现了绿色优质便捷网址导航。</p>
-<p>② <a href="http://www.guozhivip.com/guozhi_recom/advanced_lead.html" target="_blank" rel="external">果汁高级搜索</a></p>
+<p>② <a href="http://www.guozhivip.com/nav/advanced_lead.html" target="_blank" rel="external">果汁高级搜索</a></p>
 <p>&emsp;&emsp;用户在搜索时可根据需求自主选择百度搜索，搜狗搜索，360搜索任何一种搜索引擎进行搜索，此外，还提供了知乎，淘宝，优酷三种搜索方式的便捷入口以及每日热点新闻，热门电影，综艺节目排行榜，可搜知乎问答，生活物品，视频音乐等。</p>
 <p>③ <a href="http://www.guozhivip.com/sight/Sight.html" target="_blank" rel="external">Sight</a></p>
 <p>&emsp;&emsp;果汁摄影平台 ，精选各地旅行摄影美图，包括日本富山县、东京，中国上海、江苏、西安等地风景，带你游览世界。</p>
@@ -80,9 +80,9 @@
 <ul>
 <li><p>2015年11月开始自学WEB开发，<a href="http://www.guozhivip.com/" target="_blank" rel="external">果汁英语网（guozhivip.com）</a>Beta版在不断摸索中完成开发并于2016年1月12日成功上线。</p>
 </li>
-<li><p>2016年1月22日，<a href="http://guozhivip.com/guozhi_recom/guozhi_recom.html" target="_blank" rel="external">果汁资源导航 </a>模块开发完成并上线，收录了各种优质实用型网站（主要包括日常应用，英语学习，编程学习，考研，找工作，影视娱乐等网站），采用简约板块式设计，实现了绿色优质便捷网址导航。</p>
+<li><p>2016年1月22日，<a href="http://guozhivip.com/nav" target="_blank" rel="external">果汁资源导航 </a>模块开发完成并上线，收录了各种优质实用型网站（主要包括日常应用，英语学习，编程学习，考研，找工作，影视娱乐等网站），采用简约板块式设计，实现了绿色优质便捷网址导航。</p>
 </li>
-<li><p>2016年2月21日，<a href="http://www.guozhivip.com/guozhi_recom/advanced_lead.html" target="_blank" rel="external">果汁高级搜索 </a>成功上线。用户在搜索时可根据需求自主选择百度搜索，搜狗搜索，360搜索任何一种搜索引擎进行搜索，此外，还提供了知乎，淘宝，优酷三种搜索方式的便捷入口以及每日热点新闻，热门电影，综艺节目排行榜，可搜知乎问答，生活物品，视频音乐等。</p>
+<li><p>2016年2月21日，<a href="http://www.guozhivip.com/nav/advanced_lead.html" target="_blank" rel="external">果汁高级搜索 </a>成功上线。用户在搜索时可根据需求自主选择百度搜索，搜狗搜索，360搜索任何一种搜索引擎进行搜索，此外，还提供了知乎，淘宝，优酷三种搜索方式的便捷入口以及每日热点新闻，热门电影，综艺节目排行榜，可搜知乎问答，生活物品，视频音乐等。</p>
 </li>
 <li><p>2016年3月2日，果汁教育网站移动端正式上线，同时已被百度，Google，搜狗，360等主流搜索引擎收录。</p>
 </li>
@@ -886,13 +886,6 @@
   
     
     <entry>
-      <title><![CDATA[404]]></title>
-      <url>http://guozhivip.github.io/404/index.html</url>
-      <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
-<h2 id="permalink-404"><a href="#permalink-404" class="headerlink" title="permalink: /404"></a>permalink: /404</h2>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[about]]></title>
       <url>http://guozhivip.github.io/about/index.html</url>
       <content type="html"><![CDATA[<p>   一个爱折腾的伪文艺青年。</p>
@@ -904,7 +897,7 @@
 </blockquote>
 <h3 id="其他详情"><a href="#其他详情" class="headerlink" title="其他详情"></a>其他详情</h3><ul>
 <li><a href="http://guozhivip.com/" target="_blank" rel="external">果汁英语官网</a></li>
-<li><a href="http://guozhivip.com/guozhi_recom/guozhi_recom.html" target="_blank" rel="external">果汁资源导航</a></li>
+<li><a href="http://guozhivip.com/nav" target="_blank" rel="external">果汁资源导航</a></li>
 <li><a href="http://guozhivip.com/sight/Sight.html" target="_blank" rel="external">果汁摄影</a></li>
 <li><a href="http://www.guozhivip.com/guozhi_history/guozhihistory.html" target="_blank" rel="external">果汁大事记</a></li>
 <li><a href="http://guozhivip.com/myblog/myblog.html" target="_blank" rel="external">果汁英语创始人</a></li>
@@ -917,6 +910,13 @@
       <title><![CDATA[tags]]></title>
       <url>http://guozhivip.github.io/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[404]]></title>
+      <url>http://guozhivip.github.io/404/index.html</url>
+      <content type="html"><![CDATA[<p>title: 404 Not Found：该页无法显示,请稍后刷新再试哦<br>toc: false<br>comments: false</p>
+<h2 id="permalink-404"><a href="#permalink-404" class="headerlink" title="permalink: /404"></a>permalink: /404</h2>]]></content>
     </entry>
     
   
